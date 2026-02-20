@@ -1,0 +1,199 @@
+---
+title: "Reporting practices of statistical results"
+output: html_document
+date: "2025-08-11"
+---
+
+### Load packages
+```{r include=FALSE}
+library(metacheck) 
+library(dplyr) 
+library(readxl)
+library(here)
+library(rlang)
+```
+
+Steps 1, 2, and 3 do not need to be redone. You can proceed directly to Step 4 to load the RDS object containing the articles.
+
+### Step 1- Convert all PDFs to XML format and save
+```{r}
+# List files in "pdf_files"
+pdf_files <- list.files(
+  path = here("files", "pdf_files"),
+  pattern = "\\.pdf$", 
+  full.names = TRUE
+  )
+
+# Convert PDFs to XML format
+pdf2grobid(
+  pdf_files, 
+  save_path = here("files", "xml_files"), 
+  grobid_url = "https://thesanogoeffect-grobid-papercheck.hf.space"
+)
+```
+Two PDFs could not be converted to XML format resulting in a total of 347 studies in XML format.
+
+### Step 2- Read in XML files
+```{r}
+# List files in "xml_files"
+path_files <- list.files(
+  path = here("files", "xml_files"), 
+  pattern = "\\.xml$", 
+  full.names = TRUE
+)
+
+# Read in XML files
+articles <- read(path_files)
+```
+
+### Step 3- Store XML files as an RDS object for efficiency
+```{r}
+saveRDS(articles, "articles_xml.Rds")
+```
+
+### Step 4- Load RDS object
+```{r}
+articles_files <- readRDS("articles_xml.Rds")
+```
+
+## Run metacheck modules
+### `all_p_values` module 
+
+It returns all reported p-values in the articles. 
+```{r}
+all_p <- module_run(
+  articles_files, 
+  "all_p_values"
+  )
+
+all_ps <- all_p$table |>
+  count(text, sort = TRUE)
+
+all_ps
+```
+
+
+### `stat_p_exact` module
+
+It returns exact significant p-values
+```{r}
+exact <- module_run(
+  articles_files, 
+  "stat_p_exact"
+  )
+
+exact$table |> 
+  count(text, sort = TRUE)
+
+tbl <- exact$table |> 
+  filter(section == "results") |> 
+  nrow()
+```
+
+### `stat_p_nonsig` module
+
+It returns exact non-significant p-values
+```{r}
+exact_nonsig <- module_run(
+  articles_files, 
+  "stat_p_nonsig"
+  )
+
+exact_nonsig$table |> 
+  count(text, sort = TRUE)
+```
+
+### `stat_effect_size` module
+
+It detects reported standardized effect sizes for t-tests and f-tests
+
+Number of t-tests and/or F-tests that did not report a standardized effect size
+```{r}
+es <- module_run(
+  articles_files, 
+  "stat_effect_size"
+)
+
+es$summary_text
+```
+
+Estimate number of F-tests not reporting an effect size
+```{r}
+head(es$table, 5)
+es$table |> 
+  mutate(as.factor(test)) |> 
+  filter(test == "F-test") |> 
+  count(is.na(es)) |> # returns cases where es == NA (not reported)
+  mutate(prop = n / sum(n)) 
+```
+Estimate number of t-tests not reporting an effect size
+```{r}
+es$table |> 
+  mutate(as.factor(test)) |> 
+  filter(test == "t-test") |> 
+  count(is.na(es)) |> # returns cases where es == NA (not reported)
+  mutate(prop = n / sum(n)) 
+```
+
+Search for articles that have reported means ± SDs
+```{r}
+  search_text(
+    articles_files,
+    pattern = "(?i)mean\\s*±\\s*(sd|s\\.d\\.)", 
+    section = "results",
+    return = "sentence"
+    )
+```
+
+Search for articles that might have reported 95% CI
+```{r}
+  search_text(
+    articles_files,
+    pattern = "(?i)95%\\s*(CI|confidence\\s*interval)",
+    section = "results",
+    return = "sentence"
+    )
+```
+
+### `stat_check` module
+```{r}
+statcheck_p_values <- module_run(
+  articles_files, 
+  "stat_check"
+  )
+
+statcheck_p_values$table
+```
+`error` refers to p-values that have been misreported and `decision_error` refers to
+when the error changes the decision
+
+#### Prevalence of errors 
+```{r}
+statcheck_p_values$table |> 
+  mutate(as.factor(error)) |> 
+  count(error) |>         
+  mutate(prevalence = round(n / nrow(all_ps) * 100, 1)) 
+```
+
+#### Prevalence of errors by decision errors
+```{r}
+statcheck_p_values$table |> 
+  mutate(across(ends_with("error"), as.factor)) |> 
+  count(error, decision_error) |>         
+  group_by(error) |> 
+  mutate(prevalence = round(n / sum(n) * 100, 1)) |> 
+  ungroup()
+```
+
+#### Check for large discrepancies and possible false positives
+```{r}
+statcheck_p_values$table |> 
+  mutate(flagged_p_values = round(computed_p / reported_p, 1)) |> 
+           filter(flagged_p_values >= 2)
+```
+
+#### Check for large discrepancies and possible false positives only when `decision_error` == TRUE
+```{r}
+statcheck_p_values$table |> 
+  filter(decision_error, round(computed_p / reported_p, 1) >= 2)
+```

@@ -1,0 +1,56 @@
+{
+    "sources": [
+        {
+            "DOI": "10.1080/02640414.2020.1776002",
+            "URL": "https://doi.org/10.1080/02640414.2020.1776002",
+            "author": [
+                {
+                    "family": "Abt",
+                    "given": "Grant"
+                },
+                {
+                    "family": "Boreham",
+                    "given": "Colin"
+                },
+                {
+                    "family": "Davison",
+                    "given": "Gareth"
+                },
+                {
+                    "family": "Jackson",
+                    "given": "Robin"
+                },
+                {
+                    "family": "Nevill",
+                    "given": "Alan"
+                },
+                {
+                    "family": "Wallace",
+                    "given": "Eric"
+                },
+                {
+                    "family": "Williams",
+                    "given": "Mark"
+                }
+            ],
+            "container-title": "Journal of Sports Sciences",
+            "id": "abt2020",
+            "issue": "17",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        9,
+                        1
+                    ]
+                ]
+            },
+            "note": "tex.ids= abt_2020 _eprint: https://doi.org/10.1080/02640414.2020.1776002",
+            "page": "1933-1935",
+            "title": "Power, precision, and sample size estimation in sport and exercise science research",
+            "type": "article-journal",
+            "volume": "38"
+        }
+    ],
+    "project_biblios": []
+}

@@ -1,0 +1,5 @@
+"0","# Load RDS object
+articles_files <- readRDS(here(""data"", ""articles_xml.Rds""))
+"
+"2","Error in gzfile(file, ""rb"") : cannot open the connection
+"

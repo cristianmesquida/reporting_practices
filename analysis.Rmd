@@ -5,6 +5,7 @@ date: "2025-08-11"
 ---
 
 ### Load packages
+
 ```{r include=FALSE}
 # install.packages("devtools")
 # devtools::install_github("scienceverse/metacheck")
@@ -19,6 +20,7 @@ library(rlang)
 Steps 1, 2, and 3 do not need to be redone. You can proceed directly to Step 4 to load the RDS object containing the articles.
 
 ## Step 1- Convert all PDFs to XML format and save
+
 ```{r}
 # List files in "pdf_files"
 pdf_files <- list.files(
@@ -34,9 +36,11 @@ pdf2grobid(
   grobid_url = "https://thesanogoeffect-grobid-papercheck.hf.space"
 )
 ```
+
 Two PDFs could not be converted to XML format resulting in a total of 347 studies in XML format.
 
 ## Step 2- Read in XML files
+
 ```{r}
 # List files in "xml_files"
 path_files <- list.files(
@@ -50,19 +54,23 @@ articles <- read(path_files)
 ```
 
 ## Step 3- Store XML files as an RDS object for efficiency
+
 ```{r}
 saveRDS(articles, "articles_xml.Rds")
 ```
 
 ## Step 4- Load RDS object
+
 ```{r}
 articles_files <- readRDS("articles_xml.Rds")
 ```
 
 ## Run metacheck modules
-### `all_p_values` module 
 
-It returns all reported p-values in the articles. 
+### `all_p_values` module
+
+It returns all reported p-values in the articles.
+
 ```{r}
 all_p <- module_run(
   articles_files, 
@@ -77,7 +85,8 @@ all_ps
 
 ### `stat_p_exact` module
 
-It returns all p-values (I thought it was only significant)
+It returns all p-values (I thought it was only significant p-values).
+
 ```{r}
 exact <- module_run(
   articles_files, 
@@ -91,44 +100,55 @@ exact$table |>
 `all_ps` and `exact$table |> count(text, sort = TRUE)` indeed return the same number of rows. This is because they do exactly the same.
 
 To count how many p-values were reported imprecisely, do this:
+
 ```{r}
 sum(exact$table$imprecise)
 ```
+
 So there were 1445 p-values reported imprecisely.
 
 To check whether the module is doing what it is supposed to do, we can compare the `text` column with the `imprecise` column. For example, for the first 5 cases, the p-values were reported as follows:
+
 ```{r}
 exact$table[1:5, "text"]
 ```
+
 To check whether p-values were classified correctly, do this:
+
 ```{r}
 exact$table[1:5, "imprecise"]
 ```
+
 We can see that the first, second and fourth p-values were reported imprecisely so they are evaluated as TRUE.
 
-If you want to see the sentence, do this:
+If you want to see the sentence from which the p-values was extracted, do this:
+
 ```{r}
 head(exact$table$expanded, 5)
 ```
-The 5 p-values reported in sentences 1-3 correspond to the first 5 p-values obtained by running `exact$table[1:5, "text"]`.
 
+The 5 p-values reported in sentences 1-3 correspond to the first 5 p-values obtained by running `exact$table[1:5, "text"]`.
 
 To assess the number of imprecisely reported significant and non-significant p-values we need to do some data wrangling.
 
-#### Count imprecise non-sisgnificant p-values
+#### Count imprecise non-significant p-values
+
 ```{r}
 exact$table |> 
   filter(p_comp %in% c(">", "≥")) |> 
   count()
 ```
+
 369 non-significant p-values were reported imprecisely
 
 #### Count imprecise significant p-values
+
 ```{r}
 exact$table |> 
   filter(p_comp %in% c("<", "≤")) |> 
   count()
 ```
+
 1951 significant p-values were reported imprecisely
 
 ### `stat_effect_size` module
@@ -136,6 +156,7 @@ exact$table |>
 It detects reported standardized effect sizes for t-tests and f-tests
 
 Number of t-tests and/or F-tests that did not report a standardized effect size
+
 ```{r}
 es <- module_run(
   articles_files, 
@@ -146,6 +167,7 @@ es$summary_text
 ```
 
 Estimate number of F-tests not reporting an effect size
+
 ```{r}
 head(es$table, 5)
 es$table |> 
@@ -154,7 +176,9 @@ es$table |>
   count(is.na(es)) |> # returns cases where es == NA (not reported)
   mutate(prop = n / sum(n)) 
 ```
+
 Estimate number of t-tests not reporting an effect size
+
 ```{r}
 es$table |> 
   mutate(as.factor(test)) |> 
@@ -164,6 +188,7 @@ es$table |>
 ```
 
 Search for articles that have reported means ± SDs
+
 ```{r}
   search_text(
     articles_files,
@@ -174,6 +199,7 @@ Search for articles that have reported means ± SDs
 ```
 
 Search for articles that might have reported 95% CI
+
 ```{r}
   search_text(
     articles_files,
@@ -184,6 +210,7 @@ Search for articles that might have reported 95% CI
 ```
 
 ### `stat_check` module
+
 ```{r}
 statcheck_p_values <- module_run(
   articles_files, 
@@ -192,10 +219,11 @@ statcheck_p_values <- module_run(
 
 statcheck_p_values$table
 ```
-`error` refers to p-values that have been misreported and `decision_error` refers to
-when the error changes the decision
 
-#### Prevalence of errors 
+`error` refers to p-values that have been misreported and `decision_error` refers to when the error changes the decision
+
+#### Prevalence of errors
+
 ```{r}
 statcheck_p_values$table |> 
   mutate(as.factor(error)) |> 
@@ -204,6 +232,7 @@ statcheck_p_values$table |>
 ```
 
 #### Prevalence of errors by decision errors
+
 ```{r}
 statcheck_p_values$table |> 
   mutate(across(ends_with("error"), as.factor)) |> 
@@ -214,6 +243,7 @@ statcheck_p_values$table |>
 ```
 
 #### Check for large discrepancies and possible false positives
+
 ```{r}
 statcheck_p_values$table |> 
   mutate(flagged_p_values = round(computed_p / reported_p, 1)) |> 
@@ -221,6 +251,7 @@ statcheck_p_values$table |>
 ```
 
 #### Check for large discrepancies and possible false positives only when `decision_error` == TRUE
+
 ```{r}
 statcheck_p_values$table |> 
   filter(decision_error, round(computed_p / reported_p, 1) >= 2)

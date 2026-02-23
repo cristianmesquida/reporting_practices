@@ -1,8 +1,0 @@
-"0","exact$table |> 
-  filter(section == ""results"") |> 
-  nrow()
-"
-"1","[1]"
-"1"," 3859"
-"1","
-"

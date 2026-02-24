@@ -36,7 +36,7 @@ Cristian Mesquida – 0000-0002-1542-8355
 
 ```{r}
 # Load packages
-
+library(dplyr)
 ```
 
 # Introduction

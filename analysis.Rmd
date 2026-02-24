@@ -5,7 +5,11 @@ date: "2025-08-11"
 ---
 
 ### Load packages
+
 ```{r include=FALSE}
+# install.packages("devtools")
+# devtools::install_github("scienceverse/metacheck")
+
 library(metacheck) 
 library(dplyr) 
 library(readxl)
@@ -20,7 +24,8 @@ library(tibble)
 
 Steps 1, 2, and 3 do not need to be redone. You can proceed directly to Step 4 to load the RDS object containing the articles.
 
-### Step 1- Convert all PDFs to XML format and save
+## Step 1- Convert all PDFs to XML format and save
+
 ```{r}
 # List files in "pdf_files"
 pdf_files <- list.files(
@@ -36,9 +41,11 @@ pdf2grobid(
   grobid_url = "https://thesanogoeffect-grobid-papercheck.hf.space"
 )
 ```
+
 Two PDFs could not be converted to XML format resulting in a total of 347 studies in XML format.
 
-### Step 2- Read in XML files
+## Step 2- Read in XML files
+
 ```{r}
 # List files in "xml_files"
 path_files <- list.files(
@@ -51,12 +58,14 @@ path_files <- list.files(
 articles <- read(path_files)
 ```
 
-### Step 3- Store XML files as an RDS object for efficiency
+## Step 3- Store XML files as an RDS object for efficiency
+
 ```{r}
 saveRDS(articles, "articles_xml.Rds")
 ```
 
-### Step 4- Load RDS object
+## Step 4- Load RDS object
+
 ```{r}
 articles_files <- readRDS("articles_xml.Rds")
 ```

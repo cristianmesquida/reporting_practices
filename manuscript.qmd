@@ -11,6 +11,7 @@ knitr:
     echo: false
 # bibliography: references.bib
 # csl: 
+editor: visual
 ---
 
 #### Affiliation

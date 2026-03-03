@@ -1,12 +1,12 @@
----
-title: "Reporting practices of statistical results"
-output: html_document
-date: "2025-08-11"
----
-
-### Load packages
-
-```{r include=FALSE}
+#
+#
+#
+#
+#
+#
+#
+#
+#
 # install.packages("devtools")
 # devtools::install_github("scienceverse/metacheck")
 
@@ -21,13 +21,13 @@ library(statcheck)
 library(stringr)
 library(tibble)
 library(readr)
-```
-
-Steps 1, 2, and 3 do not need to be redone. You can proceed directly to Step 4 to load the RDS object containing the articles.
-
-## Step 1- Convert all PDFs to XML format and save
-
-```{r}
+#
+#
+#
+#
+#
+#
+#
 # List files in "pdf_files"
 pdf_files <- list.files(
   path = here("files", "pdf_files"),
@@ -41,13 +41,13 @@ pdf2grobid(
   save_path = here("files", "xml_files"), 
   grobid_url = "https://thesanogoeffect-grobid-papercheck.hf.space"
 )
-```
-
-Two PDFs could not be converted to XML format resulting in a total of 347 studies in XML format.
-
-## Step 2- Read in XML files
-
-```{r}
+#
+#
+#
+#
+#
+#
+#
 # List files in "xml_files"
 path_files <- list.files(
   path = here("files", "xml_files"), 
@@ -57,27 +57,27 @@ path_files <- list.files(
 
 # Read in XML files
 articles <- read(path_files)
-```
-
-## Step 3- Store XML files as an RDS object for efficiency
-
-```{r}
+#
+#
+#
+#
+#
 saveRDS(articles, "articles_xml.Rds")
-```
-
-## Step 4- Load RDS object
-
-```{r}
+#
+#
+#
+#
+#
 articles_files <- readRDS("articles_xml.Rds")
-```
-
-## Run metacheck modules
-
-### `stat_p_exact` module
-
-It returns all p-values only in the results section.
-
-```{r}
+#
+#
+#
+#
+#
+#
+#
+#
+#
 exact <- module_run(
   articles_files, 
   "stat_p_exact"
@@ -85,57 +85,57 @@ exact <- module_run(
 
 exact$table |> 
   count(text)
-```
-
-### count total number of p-values detected in the results section
-```{r}
+#
+#
+#
+#
 exact$table |> 
   count()
-```
-
-5578 p-values were detected in the articles results sections
-
-### count total number of significant and non-significant p-values in the results section
-```{r}
+#
+#
+#
+#
+#
+#
 exact$table |> 
   count(p_comp)
-```
-
-#### Count imprecise non-significant p-values (assuming reported as p > .05 or p ≥ .05)
-
-```{r}
+#
+#
+#
+#
+#
 exact$table |> 
   filter(p_comp %in% c(">", "≥")) |> 
   count()
-```
-
-369 non-significant p-values were reported imprecisely
-
-#### Count imprecise significant p-values (assuming reported as p < .05 or p ≤ .05)
-
-```{r}
+#
+#
+#
+#
+#
+#
+#
 exact$table |> 
   filter(p_comp %in% c("<", "≤")) |> 
   count()
-```
-
-1951 significant p-values were reported imprecisely
-
-The same analysis but this time excluding any versions of p-values that are reported as p < .001 or p ≤ .001, as these are often reported imprecisely but are still significant
-```{r}
+#
+#
+#
+#
+#
+#
 exact$table |> 
   filter(p_comp %in% c("<", "≤"), !str_detect(p_value, regex("0\\.001|\\.001", ignore_case = TRUE))) |> 
   count()
-```
-
-Returns 1215 imprecise significant p-values that were reported as p < .05 or p ≤ .05 (excluding those reported as p < .001 or p ≤ .001)
-
-### `stat_effect_size` module
-
-It detects reported standardized effect sizes for t-tests and f-tests
-
-Returns a table with counts of t-tests and F-tests that did not report a standardized effect size and those that did report one.
-```{r}
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
 es <- module_run(
   articles_files,
   "stat_effect_size"
@@ -162,11 +162,11 @@ es_summary <- if (is.null(es) || is.null(es$table) || nrow(es$table) == 0L) {
 }
 
 es_summary
-```
-
-Search for articles that have reported the symbol "±" in the results section. Returns the sentences where this symbol was detected and how many papers reported it. This is a very crude way to determine how many papers reported means and SDs, as it does not allow us to determine the number of papers that reported means and SDs but only if they used this symbol to report them.
-
-```{r}
+#
+#
+#
+#
+#
 # Search for the ± symbol in the results section and count how many papers contain it
 pm_hits <- search_text(
   articles_files,
@@ -199,11 +199,11 @@ result_pm <- tibble::tibble(
 )
 
 result_pm
-```
-
-Search for articles that have reported means and SDs on the basis of the pattern "mean ± SD" or "mean ± s.d. or mean ± standard deviation" (case-insensitive), most commonly reported in the methods. Returns the sentences where this pattern was detected.
-# this test is not informative, as it does not allow us to determine the number of papers that reported means ± SDs but only if they used this terminology, and authors commonly do not define.
-```{r}
+#
+#
+#
+#
+#
 mean_sd_hits <- search_text(
   articles_files,
   pattern = "(?i)mean\\s*±\\s*(sd|s\\.d\\.|standard\\s+deviation)",
@@ -235,11 +235,11 @@ result_mean_sd <- tibble::tibble(
 )
 
 result_mean_sd
-```
-
-Search for articles that might have reported 95% CI or confidence intervals on the basis of the pattern "95% CI" or "95% confidence interval" (case-insensitive) in paper (commonly reported in the methods or results). Returns the sentences where this pattern was detected and how many papers reported 95% CI or confidence intervals. Again, this test is not too informative, as it does not allow us to determine the number of papers that reported 95% CI or confidence intervals but only if they used this terminology.
-
-```{r}
+#
+#
+#
+#
+#
 ci_hits <- search_text(
   articles_files,
   pattern = "(?i)95%\\s*(CI|confidence\\s*interval)",
@@ -271,11 +271,11 @@ result_95ci <- tibble::tibble(
 )
 
 result_95ci
-```
-
-### `stat_check` module and analysis of the results to count total number of tests completed and produce a table broken down into t-tests and F-tests
-
-```{r}
+#
+#
+#
+#
+#
 # Run statcheck on the corpus, then count how many tests completed
 # and produce a table broken down into t-tests and F-tests.
 statcheck_p_values <- module_run(articles_files, "stat_check")
@@ -310,58 +310,58 @@ summary_table <- dplyr::bind_rows(
 )
 
 summary_table
-```
-
-`error` refers to p-values that have been misreported and `decision_error` refers to when the error changes the decision
-
-#### Prevalence of errors, errors are defined as when the computed p-value does not match the reported p-value, regardless of whether this leads to a decision error or not. The prevalence is calculated as the percentage of errors out of the total number of tests completed. This gives us an overall estimate of how common reporting errors are in the sample of articles analyzed.
-
-```{r}
+#
+#
+#
+#
+#
+#
+#
 completed |>
   mutate(error = as.factor(error)) |>
   count(error) |>
   mutate(prevalence = round(n / sum(n) * 100, 1))
-```
-
-### run the same analysis but this time create a new error report, reporting TRUE if the computed_p is only different to the reported_p buy more than 1 decimal place
-
-```{r}
+#
+#
+#
+#
+#
 completed |>
   mutate(new_error = abs(computed_p - reported_p) > 0.1) |>
   count(new_error) |>
   mutate(prevalence = round(n / sum(n) * 100, 1))
 
-```
-
-
-#### Prevalence of errors by decision errors
-
-```{r}
+#
+#
+#
+#
+#
+#
 completed |>
   mutate(error = as.factor(error)) |>
   count(decision_error) |>
   mutate(prevalence = round(n / sum(n) * 100, 1))
-```
-
-#### Check for large discrepancies and possible false positives [REVISE]
-
-```{r}
+#
+#
+#
+#
+#
 statcheck_p_values$table |> 
   mutate(flagged_p_values = round(computed_p / reported_p, 1)) |> 
            filter(flagged_p_values >= 2)
-```
-
-#### Check for large discrepancies and possible false positives only when `decision_error` = TRUE
-
-```{r}
+#
+#
+#
+#
+#
 statcheck_p_values$table |> 
   filter(decision_error, round(computed_p / reported_p, 1) >= 2)
-```
-
-### Section 2 - Data analysis for the manually coded data
-
-### part 1 - statcheck for t-tests and F-tests
-```{r}
+#
+#
+#
+#
+#
+#
 ANOVA_rep <- read_csv("DATA reporting_practices - ANOVA rep.csv", col_types = cols())  # returns a tibble
 T_test_rep <- read_csv("DATA reporting_practices - ttest rep.csv", col_types = cols())  # returns a tibble
 
@@ -443,83 +443,35 @@ res_t <- if (exists("t_test_statcheck")) summarize_flags(t_test_statcheck) else 
 res_F <- if (exists("F_test_statcheck")) summarize_flags(F_test_statcheck) else list(error = tibble(), decision_error = tibble())
 
 list(t_test = res_t, F_test = res_F)
-```
-
-### Descriptive statistics for the manually coded data
-```{r}
+#
+#
+#
+#
 Coded_papers <- read_csv("DATA reporting_practices - Coded Data.csv", col_types = cols())  # returns a tibble
 
-# treat a cell as "reported" if it contains a numeric value or the letter "y"
+'''in coded_papers, calculate the frequencies of how many times a value is reported in the t_statistic or f -statistic column, and how many times the value is missing (NA) for t-tests and F-tests separately. Then calculate the proportion of reported values out of the total for both test type.''' 
 
- is_reported_value <- function(x) {
-    s <- as.character(x)
-    s_trim <- str_trim(s)
-    is_missing <- is.na(s) | s_trim == ""
-    is_y <- !is_missing & str_detect(s_trim, regex("\\by\\b", ignore_case = TRUE))
-    is_num <- !is_missing & !is.na(suppressWarnings(as.numeric(s_trim)))
-    is_y | is_num
-  }
-
-  if (!"Test_Type" %in% names(Coded_papers)) {
-    if (any(c("t_statistic", "f_statistic") %in% names(Coded_papers))) {
-      Coded_papers <- Coded_papers |>
-        mutate(
-          Test_Type = case_when(
-            is_reported_value(t_statistic) ~ "t-test",
-            is_reported_value(f_statistic) ~ "F-test",
-            TRUE ~ NA_character_
-          )
-        )
-    } else {
-      stop("No Test_Type-like column found and neither t_statistic nor f_statistic exist. Run names(Coded_papers) to inspect column names.")
-    }
-  }
-
-
-# compute summaries (uses Test_Type))
-is_reported_value <- function(x) {
-  s <- as.character(x)
-  s_trim <- str_trim(s)
-  is_missing <- is.na(s) | s_trim == ""
-  is_y <- !is_missing & str_detect(s_trim, regex("\\by\\b", ignore_case = TRUE))
-  is_num <- !is_missing & !is.na(suppressWarnings(as.numeric(s_trim)))
-  is_y | is_num
-}
-
-total_sample <- nrow(Coded_papers)
-
-statistic_summary <- Coded_papers |>
-  group_by(Test_Type) |>
+t_statistic_summary <- Coded_papers %>%
+  group_by(Test_Type) %>%
   summarise(
-    reported = sum(is_reported_value(t_statistic)),
-    missing = sum(!is_reported_value(t_statistic)),
+    reported = sum(!is.na(t_statistic)),
+    missing = sum(is.na(t_statistic)),
     total = n(),
-    proportion_reported = reported / total,
-    perc_of_total_reported = reported / total_sample * 100,
-    perc_of_total_missing = missing / total_sample * 100,
-    .groups = "drop"
+    proportion_reported = reported / total
   )
 
-list(statistic_summary = statistic_summary)
+f_statistic_summary <- Coded_papers %>%
+  group_by(Test_Type) %>%
+  summarise(
+    reported = sum(!is.na(f_statistc)),
+    missing = sum(is.na(f_statistc)),
+    total = n(),
+    proportion_reported = reported / total
+  )
+t_statistic_summary
+f_statistic_summary
 
-
-# compute percent of rows with a reported p-value (uses total_sample already defined) from the column "are p_values_reported", only if YES
-
- # Count YES responses
-yes_count <- sum(Coded_papers$`p-values?` == "Yes", na.rm = TRUE)
-
-# Total number of observations (non-missing)
-total_n <- sum(!is.na(Coded_papers$`p-values?`))
-
-# Print result
-yes_count
-total_n
-
-# Compute proportion
-if (total_n > 0) {
-  yes_proportion <- yes_count / total_n
-} else {
-  yes_proportion <- NA
-}
-yes_proportion
-
+#
+#
+#
+#

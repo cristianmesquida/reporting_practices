@@ -44,7 +44,7 @@ pdf2grobid(
 )
 ```
 
-Two PDFs could not be converted to XML format resulting in a total of 347 studies in XML format.
+Three PDFs could not be converted to XML format (350 − 347), resulting in a total of 347 studies in XML format for the automated meta-check analysis.
 
 ## Step 2- Read in XML files
 
@@ -287,16 +287,35 @@ tbl <- statcheck_p_values$table
 completed <- tbl %>%
   dplyr::filter(!is.na(computed_p))
 
-# standardise test type labels (t-test, F-test, other)
+# Standardise test type labels using an explicit vocabulary check.
+# The previous case_when used "^t" / "^f" which would mis-classify any
+# string starting with t or f (e.g., "test") because the t-branch was
+# evaluated first under case-insensitive matching. We now require the
+# label to be exactly one of the known vocabularies after trimming, with
+# a small whitelist of synonyms. Inspect unique(completed$test_raw) before
+# relying on the output.
+.norm_test_label <- function(x) {
+  s <- tolower(stringr::str_trim(as.character(x)))
+  dplyr::case_when(
+    s %in% c("t", "t-test", "ttest", "t test", "student's t", "students t",
+             "welch's t", "paired t", "independent t") ~ "t-test",
+    s %in% c("f", "f-test", "ftest", "f test", "anova", "ancova",
+             "repeated measures anova", "rm-anova") ~ "F-test",
+    is.na(s) | s == "" ~ NA_character_,
+    TRUE ~ "other"
+  )
+}
+
 completed <- completed %>%
   dplyr::mutate(
-    test_raw = as.character(test_type),
-    test_type = dplyr::case_when(
-      stringr::str_detect(test_raw, stringr::regex("\\bt\\b|t-test|^t", ignore_case = TRUE)) ~ "t-test",
-      stringr::str_detect(test_raw, stringr::regex("\\bf\\b|f-test|^f", ignore_case = TRUE)) ~ "F-test",
-      TRUE ~ "other"
-    )
+    test_raw  = as.character(test_type),
+    test_type = .norm_test_label(test_raw)
   )
+
+# Audit the mapping so future readers can see what was classified as what
+.test_label_audit <- completed %>%
+  dplyr::count(test_raw, test_type, sort = TRUE)
+.test_label_audit
 
 # summary table: counts and proportions
 total_completed <- nrow(completed)

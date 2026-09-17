@@ -7,3 +7,5 @@ power/data/.DS_Store
 files/
 trackdown.R
 .Rproj.user
+.claude
+articles_xml.Rds

@@ -4,7 +4,8 @@ power/index.js
 power/files
 power/files/.DS_Store
 power/data/.DS_Store
-files/
+files/pdf_files/
+files/xml_files/
 trackdown.R
 .Rproj.user
 .claude

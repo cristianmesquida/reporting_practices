@@ -1,4 +1,2109 @@
 {
-    "sources": [],
+    "sources": [
+        {
+            "DOI": "10.3758/s13428-015-0664-2",
+            "ISSN": "1554-3528",
+            "URL": "http://link.springer.com/10.3758/s13428-015-0664-2",
+            "author": [
+                {
+                    "family": "Nuijten",
+                    "given": "Michele"
+                },
+                {
+                    "family": "Hartgerink",
+                    "given": "Chris H. J."
+                },
+                {
+                    "family": "Van Assen",
+                    "given": "Marcel A. L. M."
+                },
+                {
+                    "family": "Epskamp",
+                    "given": "Sacha"
+                },
+                {
+                    "family": "Wicherts",
+                    "given": "Jelte M."
+                }
+            ],
+            "container-title": "Behavior Research Methods",
+            "id": "nuijten_prevalence_2016",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016,
+                        12
+                    ]
+                ]
+            },
+            "page": "1205-1226",
+            "title": "The prevalence of statistical reporting errors in psychology (1985–2013)",
+            "type": "article-journal",
+            "volume": "48"
+        },
+        {
+            "DOI": "10.3758/s13428-011-0089-5",
+            "URL": "https://doi.org/10.3758/s13428-011-0089-5",
+            "author": [
+                {
+                    "family": "Bakker",
+                    "given": "M."
+                },
+                {
+                    "family": "Wicherts",
+                    "given": "J. M."
+                }
+            ],
+            "container-title": "Behavior Research Methods",
+            "id": "bakker_misreporting_2011",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2011
+                    ]
+                ]
+            },
+            "page": "666-678",
+            "title": "The (mis)reporting of statistical results in psychology journals",
+            "type": "article-journal",
+            "volume": "43"
+        },
+        {
+            "DOI": "10.1038/s41562-018-0399-z",
+            "URL": "https://doi.org/10.1038/s41562-018-0399-z",
+            "author": [
+                {
+                    "family": "Camerer",
+                    "given": "C. F."
+                },
+                {
+                    "family": "Dreber",
+                    "given": "A."
+                },
+                {
+                    "family": "Holzmeister",
+                    "given": "F."
+                },
+                {
+                    "family": "Ho",
+                    "given": "T.-H."
+                },
+                {
+                    "family": "Huber",
+                    "given": "J."
+                },
+                {
+                    "family": "Johannesson",
+                    "given": "M."
+                },
+                {
+                    "family": "Kirchler",
+                    "given": "M."
+                },
+                {
+                    "family": "Nave",
+                    "given": "G."
+                },
+                {
+                    "family": "Nosek",
+                    "given": "B. A."
+                },
+                {
+                    "family": "Pfeiffer",
+                    "given": "T."
+                },
+                {
+                    "family": "Altmejd",
+                    "given": "A."
+                },
+                {
+                    "family": "Buttrick",
+                    "given": "N."
+                },
+                {
+                    "family": "Chan",
+                    "given": "T."
+                },
+                {
+                    "family": "Chen",
+                    "given": "Y."
+                },
+                {
+                    "family": "Forsell",
+                    "given": "E."
+                },
+                {
+                    "family": "Gampa",
+                    "given": "A."
+                },
+                {
+                    "family": "Heikensten",
+                    "given": "E."
+                },
+                {
+                    "family": "Hummer",
+                    "given": "L."
+                },
+                {
+                    "family": "Imai",
+                    "given": "T."
+                },
+                {
+                    "family": "Wu",
+                    "given": "H."
+                }
+            ],
+            "container-title": "Nature Human Behaviour",
+            "id": "camerer_evaluating_2018",
+            "issue": "9",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "page": "637-644",
+            "title": "Evaluating the replicability of social science experiments in Nature and Science between 2010 and 2015",
+            "type": "article-journal",
+            "volume": "2"
+        },
+        {
+            "DOI": "10.1126/science.aac4716",
+            "URL": "https://doi.org/10.1126/science.aac4716",
+            "author": [
+                {
+                    "literal": "Open Science Collaboration"
+                }
+            ],
+            "container-title": "Science",
+            "id": "open_science_collaboration_estimating_2015",
+            "issue": "6251",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015
+                    ]
+                ]
+            },
+            "page": "aac4716",
+            "title": "Estimating the reproducibility of psychological science",
+            "type": "article-journal",
+            "volume": "349"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=statcheck",
+            "author": [
+                {
+                    "family": "Epskamp",
+                    "given": "S."
+                },
+                {
+                    "family": "Nuijten",
+                    "given": "M."
+                }
+            ],
+            "id": "epskamp_statcheck_2018",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "title": "Statcheck: Extract Statistics from Articles and Recompute p Values (1.3.0)",
+            "title-short": "Statcheck",
+            "type": ""
+        },
+        {
+            "DOI": "10.7554/eLife.23693",
+            "URL": "https://doi.org/10.7554/eLife.23693",
+            "author": [
+                {
+                    "family": "Errington",
+                    "given": "T. M."
+                },
+                {
+                    "family": "Denis",
+                    "given": "A."
+                },
+                {
+                    "family": "Perfito",
+                    "given": "N."
+                },
+                {
+                    "family": "Iorns",
+                    "given": "E."
+                },
+                {
+                    "family": "Nosek",
+                    "given": "B. A."
+                }
+            ],
+            "container-title": "eLife",
+            "id": "errington_reproducibility_2017",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017
+                    ]
+                ]
+            },
+            "page": "e23693",
+            "title": "Reproducibility in cancer biology: The challenges of replication",
+            "title-short": "Reproducibility in cancer biology",
+            "type": "article-journal",
+            "volume": "6"
+        },
+        {
+            "DOI": "10.7554/eLife.71601",
+            "URL": "https://doi.org/10.7554/eLife.71601",
+            "author": [
+                {
+                    "family": "Errington",
+                    "given": "T. M."
+                },
+                {
+                    "family": "Mathur",
+                    "given": "M."
+                },
+                {
+                    "family": "Soderberg",
+                    "given": "C. K."
+                },
+                {
+                    "family": "Denis",
+                    "given": "A."
+                },
+                {
+                    "family": "Perfito",
+                    "given": "N."
+                },
+                {
+                    "family": "Iorns",
+                    "given": "E."
+                },
+                {
+                    "family": "Nosek",
+                    "given": "B. A."
+                }
+            ],
+            "container-title": "eLife",
+            "id": "errington_investigating_2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "page": "e71601",
+            "title": "Investigating the replicability of preclinical cancer biology",
+            "type": "article-journal",
+            "volume": "10"
+        },
+        {
+            "DOI": "10.1007/s40279-022-01749-1",
+            "URL": "https://doi.org/10.1007/s40279-022-01749-1",
+            "author": [
+                {
+                    "family": "Murphy",
+                    "given": "J."
+                },
+                {
+                    "family": "Mesquida",
+                    "given": "C."
+                },
+                {
+                    "family": "Caldwell",
+                    "given": "A. R."
+                },
+                {
+                    "family": "Earp",
+                    "given": "B. D."
+                },
+                {
+                    "family": "Warne",
+                    "given": "J. P."
+                }
+            ],
+            "container-title": "Sports Medicine",
+            "id": "murphy_proposal_2022",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "title": "Proposal of a Selection Protocol for Replication of Studies in Sports and Exercise Science",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1371/journal.pone.0114876",
+            "URL": "https://doi.org/10.1371/journal.pone.0114876",
+            "author": [
+                {
+                    "family": "Veldkamp",
+                    "given": "C. L. S."
+                },
+                {
+                    "family": "Nuijten",
+                    "given": "M. B."
+                },
+                {
+                    "family": "Dominguez-Alvarez",
+                    "given": "L."
+                },
+                {
+                    "dropping-particle": "van",
+                    "family": "Assen",
+                    "given": "M. A. L. M."
+                },
+                {
+                    "family": "Wicherts",
+                    "given": "J. M."
+                }
+            ],
+            "container-title": "PLOS ONE",
+            "id": "veldkamp_statistical_2014",
+            "issue": "12",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014
+                    ]
+                ]
+            },
+            "page": "e114876",
+            "title": "Statistical Reporting Errors and Collaboration on Statistical Analyses in Psychological Science",
+            "type": "article-journal",
+            "volume": "9"
+        },
+        {
+            "DOI": "10.3389/fpsyg.2016.01832",
+            "URL": "https://doi.org/10.3389/fpsyg.2016.01832",
+            "author": [
+                {
+                    "family": "Wicherts",
+                    "given": "J. M."
+                },
+                {
+                    "family": "Veldkamp",
+                    "given": "C. L. S."
+                },
+                {
+                    "family": "Augusteijn",
+                    "given": "H. E. M."
+                },
+                {
+                    "family": "Bakker",
+                    "given": "M."
+                },
+                {
+                    "dropping-particle": "van",
+                    "family": "Aert",
+                    "given": "R. C. M."
+                },
+                {
+                    "dropping-particle": "van",
+                    "family": "Assen",
+                    "given": "M. A. L. M."
+                }
+            ],
+            "container-title": "Frontiers in Psychology",
+            "id": "wicherts_degrees_2016",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "page": "1832",
+            "title": "Degrees of Freedom in Planning, Running, Analyzing, and Reporting Psychological Studies: A Checklist to Avoid p-Hacking",
+            "title-short": "Degrees of Freedom in Planning, Running, Analyzing, and Reporting Psychological Studies",
+            "type": "article-journal",
+            "volume": "7"
+        },
+        {
+            "DOI": "10.3389/fpsyg.2013.00863",
+            "ISSN": "1664-1078",
+            "URL": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2013.00863/full",
+            "author": [
+                {
+                    "family": "Lakens",
+                    "given": "Daniël"
+                }
+            ],
+            "container-title": "Frontiers in Psychology",
+            "id": "lakens_calculating_2013",
+            "issued": {
+                "date-parts": [
+                    [
+                        2013,
+                        11
+                    ]
+                ]
+            },
+            "page": "863",
+            "publisher": "Frontiers",
+            "title": "Calculating and reporting effect sizes to facilitate cumulative science: A practical primer for t-tests and ANOVAs",
+            "title-short": "Calculating and reporting effect sizes to facilitate cumulative science",
+            "type": "article-journal",
+            "volume": "4"
+        },
+        {
+            "DOI": "10.5281/ZENODO.6409077",
+            "URL": "https://lakens.github.io/statistical_inferences/",
+            "author": [
+                {
+                    "family": "Lakens",
+                    "given": "Daniël"
+                }
+            ],
+            "id": "lakens_improving_2022",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        4
+                    ]
+                ]
+            },
+            "publisher": "Zenodo",
+            "title": "Improving Your Statistical Inferences",
+            "type": ""
+        },
+        {
+            "DOI": "10.1037/met0000051",
+            "ISSN": "1939-1463",
+            "author": [
+                {
+                    "family": "Anderson",
+                    "given": "Samantha F."
+                },
+                {
+                    "family": "Maxwell",
+                    "given": "Scott E."
+                }
+            ],
+            "container-title": "Psychological Methods",
+            "id": "anderson_theres_2016",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "page": "1-12",
+            "publisher": "American Psychological Association",
+            "title": "There’s more than one way to conduct a replication study: Beyond statistical significance",
+            "title-short": "There’s more than one way to conduct a replication study",
+            "type": "article-journal",
+            "volume": "21"
+        },
+        {
+            "DOI": "10.1037/amp0000191",
+            "ISSN": "1935-990X",
+            "author": [
+                {
+                    "family": "Appelbaum",
+                    "given": "Mark"
+                },
+                {
+                    "family": "Cooper",
+                    "given": "Harris"
+                },
+                {
+                    "family": "Kline",
+                    "given": "Rex B."
+                },
+                {
+                    "family": "Mayo-Wilson",
+                    "given": "Evan"
+                },
+                {
+                    "family": "Nezu",
+                    "given": "Arthur M."
+                },
+                {
+                    "family": "Rao",
+                    "given": "Stephen M."
+                }
+            ],
+            "container-title": "American Psychologist",
+            "id": "appelbaum_journal_2018",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018,
+                        1
+                    ]
+                ]
+            },
+            "page": "3-25",
+            "title": "Journal article reporting standards for quantitative research in psychology: The APA Publications and Communications Board task force report",
+            "title-short": "Journal article reporting standards for quantitative research in psychology",
+            "type": "article-journal",
+            "volume": "73"
+        },
+        {
+            "DOI": "10.51224/cik.v1i3.43",
+            "ISSN": "2767-0732",
+            "URL": "https://storkjournals.org/index.php/cik/article/view/7593",
+            "author": [
+                {
+                    "family": "Twomey",
+                    "given": "Rosie"
+                },
+                {
+                    "family": "Harlley",
+                    "given": "Sena"
+                },
+                {
+                    "family": "Medina",
+                    "given": "Claudia Romero"
+                },
+                {
+                    "family": "Murphy",
+                    "given": "Jennifer"
+                },
+                {
+                    "family": "Atkins",
+                    "given": "Whitley"
+                },
+                {
+                    "family": "McCrum",
+                    "given": "Christopher"
+                },
+                {
+                    "family": "Schneider",
+                    "given": "Christoph"
+                },
+                {
+                    "family": "Warne",
+                    "given": "Joe"
+                },
+                {
+                    "family": "Yingling",
+                    "given": "Vanessa"
+                },
+                {
+                    "family": "Caldwell",
+                    "given": "Aaron"
+                }
+            ],
+            "container-title": "Communications in Kinesiology",
+            "id": "twomey_nature_2021",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        12
+                    ]
+                ]
+            },
+            "title": "The Nature of Our Literature: A Registered Report on the Positive Result Rate and Reporting Practices in Kinesiology",
+            "title-short": "The Nature of Our Literature",
+            "type": "article-journal",
+            "volume": "1"
+        },
+        {
+            "DOI": "10.31236/osf.io/ftdgj",
+            "URL": "https://osf.io/preprints/sportrxiv/ftdgj_v1/",
+            "author": [
+                {
+                    "family": "Borg",
+                    "given": "David"
+                },
+                {
+                    "family": "Bon",
+                    "given": "Joshua J"
+                },
+                {
+                    "family": "Sainani",
+                    "given": "Kristin"
+                },
+                {
+                    "family": "Baguley",
+                    "given": "Brenton J"
+                },
+                {
+                    "family": "Tierney",
+                    "given": "Nicholas J"
+                },
+                {
+                    "family": "Drovandi",
+                    "given": "Christopher"
+                }
+            ],
+            "id": "borg_sharing_2020",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        3
+                    ]
+                ]
+            },
+            "publisher": "SportRxiv",
+            "title": "Sharing Data and Code: A Comment on the Call for the Adoption of More Transparent Research Practices in Sport and Exercise Science",
+            "title-short": "Sharing Data and Code",
+            "type": ""
+        },
+        {
+            "DOI": "10.1016/j.jsams.2023.03.002",
+            "ISSN": "1878-1861",
+            "author": [
+                {
+                    "family": "Borg",
+                    "given": "David"
+                },
+                {
+                    "family": "Barnett",
+                    "given": "Adrian G."
+                },
+                {
+                    "family": "Caldwell",
+                    "given": "Aaron R."
+                },
+                {
+                    "family": "White",
+                    "given": "Nicole M."
+                },
+                {
+                    "family": "Stewart",
+                    "given": "Ian B."
+                }
+            ],
+            "container-title": "Journal of Science and Medicine in Sport",
+            "id": "borg_bias_2023",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        3
+                    ]
+                ]
+            },
+            "page": "164-168",
+            "title": "The bias for statistical significance in sport and exercise medicine",
+            "type": "article-journal",
+            "volume": "26"
+        },
+        {
+            "author": [
+                {
+                    "family": "Frank",
+                    "given": "Maximilian"
+                },
+                {
+                    "family": "Miller",
+                    "given": "Bernhard"
+                },
+                {
+                    "family": "Vosskuhl",
+                    "given": "Johannes"
+                },
+                {
+                    "family": "Zänkert",
+                    "given": "Sandra"
+                },
+                {
+                    "family": "Heßelmann",
+                    "given": "Felicitas"
+                },
+                {
+                    "family": "Jolliffe",
+                    "given": "John"
+                }
+            ],
+            "container-title": "Royal Society Open Science",
+            "id": "frank_error_2026",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2026
+                    ]
+                ]
+            },
+            "page": "242233",
+            "publisher": "The Royal Society",
+            "title": "Error needs culture! Exploring the relationship between error culture and openness",
+            "type": "article-journal",
+            "volume": "13"
+        },
+        {
+            "DOI": "10.1080/02640414.2023.2269357",
+            "author": [
+                {
+                    "family": "Mesquida",
+                    "given": "Cristian"
+                },
+                {
+                    "family": "Murphy",
+                    "given": "Jennifer"
+                },
+                {
+                    "family": "Lakens",
+                    "given": "Daniël"
+                },
+                {
+                    "family": "Warne",
+                    "given": "Joe"
+                }
+            ],
+            "container-title": "Journal of Sports Sciences",
+            "id": "mesquida2023",
+            "issue": "16",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        9
+                    ]
+                ]
+            },
+            "language": "eng",
+            "page": "1507-1517",
+            "title": "Publication bias, statistical power and reporting practices in the Journal of Sports Sciences: potential barriers to replicability",
+            "title-short": "Publication bias, statistical power and reporting practices in the Journal of Sports Sciences",
+            "type": "article-journal",
+            "volume": "41"
+        },
+        {
+            "DOI": "10.2337/dc24-1483",
+            "author": [
+                {
+                    "family": "Germaine",
+                    "given": "Mark"
+                },
+                {
+                    "family": "Healy",
+                    "given": "Graham"
+                },
+                {
+                    "family": "Egan",
+                    "given": "Brendan"
+                }
+            ],
+            "container-title": "Diabetes Care",
+            "id": "germaine2024",
+            "issue": "10",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        10
+                    ]
+                ]
+            },
+            "language": "eng",
+            "page": "e78-e79",
+            "title": "Lack of Data Sharing Despite Data Availability Statements in Studies Using Machine Learning Models for Prediction of Gestational Diabetes Mellitus",
+            "type": "article-journal",
+            "volume": "47"
+        },
+        {
+            "DOI": "10.1037/a0015972",
+            "author": [
+                {
+                    "family": "Curran",
+                    "given": "Patrick J."
+                }
+            ],
+            "container-title": "Psychological Methods",
+            "id": "curran2009",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2009,
+                        6
+                    ]
+                ]
+            },
+            "language": "eng",
+            "page": "77-80",
+            "title": "The seemingly quixotic pursuit of a cumulative psychological science: introduction to the special issue",
+            "title-short": "The seemingly quixotic pursuit of a cumulative psychological science",
+            "type": "article-journal",
+            "volume": "14"
+        },
+        {
+            "DOI": "10.1038/s41467-023-41111-1",
+            "URL": "https://www.nature.com/articles/s41467-023-41111-1",
+            "author": [
+                {
+                    "family": "Ferguson",
+                    "given": "Joel"
+                },
+                {
+                    "family": "Littman",
+                    "given": "Rebecca"
+                },
+                {
+                    "family": "Christensen",
+                    "given": "Garret"
+                },
+                {
+                    "family": "Paluck",
+                    "given": "Elizabeth Levy"
+                },
+                {
+                    "family": "Swanson",
+                    "given": "Nicholas"
+                },
+                {
+                    "family": "Wang",
+                    "given": "Zenan"
+                },
+                {
+                    "family": "Miguel",
+                    "given": "Edward"
+                },
+                {
+                    "family": "Birke",
+                    "given": "David"
+                },
+                {
+                    "family": "Pezzuto",
+                    "given": "John-Henry"
+                }
+            ],
+            "container-title": "Nature Communications",
+            "id": "ferguson2023",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        9
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "5401",
+            "title": "Survey of open science practices and attitudes in the social sciences",
+            "type": "article-journal",
+            "volume": "14"
+        },
+        {
+            "DOI": "10.1038/s41746-023-00927-3",
+            "URL": "https://www.nature.com/articles/s41746-023-00927-3",
+            "author": [
+                {
+                    "family": "Giuffrè",
+                    "given": "Mauro"
+                },
+                {
+                    "family": "Shung",
+                    "given": "Dennis L."
+                }
+            ],
+            "container-title": "npj Digital Medicine",
+            "id": "giuffre2023",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        10
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "186",
+            "title": "Harnessing the power of synthetic data in healthcare: Innovation, application, and privacy",
+            "title-short": "Harnessing the power of synthetic data in healthcare",
+            "type": "article-journal",
+            "volume": "6"
+        },
+        {
+            "DOI": "10.1371/journal.pone.0026828",
+            "URL": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026828",
+            "author": [
+                {
+                    "family": "Wicherts",
+                    "given": "Jelte M."
+                },
+                {
+                    "family": "Bakker",
+                    "given": "Marjan"
+                },
+                {
+                    "family": "Molenaar",
+                    "given": "Dylan"
+                }
+            ],
+            "container-title": "PLOS ONE",
+            "id": "wicherts2011",
+            "issue": "11",
+            "issued": {
+                "date-parts": [
+                    [
+                        2011,
+                        11
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "e26828",
+            "title": "Willingness to share research data is related to the strength of the evidence and the quality of reporting of statistical results",
+            "type": "article-journal",
+            "volume": "6"
+        },
+        {
+            "DOI": "10.1002/jrsm.1408",
+            "author": [
+                {
+                    "family": "Nuijten",
+                    "given": "Michèle B."
+                },
+                {
+                    "family": "Polanin",
+                    "given": "Joshua R."
+                }
+            ],
+            "container-title": "Research Synthesis Methods",
+            "id": "nuijten2020",
+            "issue": "5",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        9
+                    ]
+                ]
+            },
+            "language": "eng",
+            "page": "574-579",
+            "title": "statcheck: Automatically detect statistical reporting inconsistencies to increase reproducibility of meta-analyses",
+            "title-short": "statcheck",
+            "type": "article-journal",
+            "volume": "11"
+        },
+        {
+            "DOI": "10.5281/zenodo.20704754",
+            "URL": "https://scienceverse.org/metacheck",
+            "author": [
+                {
+                    "family": "DeBruine",
+                    "given": "Lisa"
+                },
+                {
+                    "family": "Mesquida",
+                    "given": "Cristian"
+                },
+                {
+                    "family": "Werner",
+                    "given": "Jakub"
+                },
+                {
+                    "family": "Lakens",
+                    "given": "Daniel"
+                }
+            ],
+            "id": "metacheck",
+            "issued": {
+                "date-parts": [
+                    [
+                        2026
+                    ]
+                ]
+            },
+            "note": "R package version 0.1.0",
+            "title": "Metacheck: Check research outputs for best practices",
+            "title-short": "Metacheck",
+            "type": "book"
+        },
+        {
+            "DOI": "10.1080/00031305.2016.1154108",
+            "author": [
+                {
+                    "family": "Wasserstein",
+                    "given": "Ronald L."
+                },
+                {
+                    "family": "Lazar",
+                    "given": "Nicole A."
+                }
+            ],
+            "container-title": "The American Statistician",
+            "id": "wasserstein_asa_2016",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "page": "129-133",
+            "title": "The ASA statement on p-values: Context, process, and purpose",
+            "title-short": "The ASA statement on p-values",
+            "type": "article-journal",
+            "volume": "70"
+        },
+        {
+            "DOI": "10.1080/00031305.2019.1583913",
+            "author": [
+                {
+                    "family": "Wasserstein",
+                    "given": "Ronald L."
+                },
+                {
+                    "family": "Schirm",
+                    "given": "Allen L."
+                },
+                {
+                    "family": "Lazar",
+                    "given": "Nicole A."
+                }
+            ],
+            "container-title": "The American Statistician",
+            "id": "wasserstein_schirm_lazar_2019",
+            "issue": "sup1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "page": "1-19",
+            "title": "Moving to a world beyond “p < 0.05”",
+            "type": "article-journal",
+            "volume": "73"
+        },
+        {
+            "DOI": "10.1038/d41586-019-00857-9",
+            "author": [
+                {
+                    "family": "Amrhein",
+                    "given": "Valentin"
+                },
+                {
+                    "family": "Greenland",
+                    "given": "Sander"
+                },
+                {
+                    "family": "McShane",
+                    "given": "Blake"
+                }
+            ],
+            "container-title": "Nature",
+            "id": "amrhein_retire_2019",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "page": "305-307",
+            "title": "Scientists rise up against statistical significance",
+            "type": "article-journal",
+            "volume": "567"
+        },
+        {
+            "DOI": "10.1007/s10654-016-0149-3",
+            "author": [
+                {
+                    "family": "Greenland",
+                    "given": "Sander"
+                },
+                {
+                    "family": "Senn",
+                    "given": "Stephen J."
+                },
+                {
+                    "family": "Rothman",
+                    "given": "Kenneth J."
+                },
+                {
+                    "family": "Carlin",
+                    "given": "John B."
+                },
+                {
+                    "family": "Poole",
+                    "given": "Charles"
+                },
+                {
+                    "family": "Goodman",
+                    "given": "Steven N."
+                },
+                {
+                    "family": "Altman",
+                    "given": "Douglas G."
+                }
+            ],
+            "container-title": "European Journal of Epidemiology",
+            "id": "greenland_misinterpretations_2016",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "page": "337-350",
+            "title": "Statistical tests, P values, confidence intervals, and power: A guide to misinterpretations",
+            "title-short": "Statistical tests, P values, confidence intervals, and power",
+            "type": "article-journal",
+            "volume": "31"
+        },
+        {
+            "DOI": "10.1177/0956797613504966",
+            "author": [
+                {
+                    "family": "Cumming",
+                    "given": "Geoff"
+                }
+            ],
+            "container-title": "Psychological Science",
+            "id": "cumming_new_statistics_2014",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014
+                    ]
+                ]
+            },
+            "page": "7-29",
+            "title": "The new statistics: Why and how",
+            "title-short": "The new statistics",
+            "type": "article-journal",
+            "volume": "25"
+        },
+        {
+            "DOI": "10.31234/osf.io/hr6qy",
+            "URL": "https://doi.org/10.31234/osf.io/hr6qy",
+            "author": [
+                {
+                    "family": "Schmidt",
+                    "given": "Thomas"
+                }
+            ],
+            "id": "schmidt_statcheck_2017",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017
+                    ]
+                ]
+            },
+            "publisher": "PsyArXiv preprint",
+            "title": "Statcheck does not work: All the numbers. Reply to Nuijten et al. (2017)",
+            "title-short": "Statcheck does not work",
+            "type": ""
+        },
+        {
+            "DOI": "10.1126/science.aab2374",
+            "author": [
+                {
+                    "family": "Nosek",
+                    "given": "B. A."
+                },
+                {
+                    "family": "Alter",
+                    "given": "G."
+                },
+                {
+                    "family": "Banks",
+                    "given": "G. C."
+                },
+                {
+                    "family": "Borsboom",
+                    "given": "D."
+                },
+                {
+                    "family": "Bowman",
+                    "given": "S. D."
+                },
+                {
+                    "family": "Breckler",
+                    "given": "S. J."
+                },
+                {
+                    "family": "Buck",
+                    "given": "S."
+                },
+                {
+                    "family": "Chambers",
+                    "given": "C. D."
+                },
+                {
+                    "family": "Chin",
+                    "given": "G."
+                },
+                {
+                    "family": "Christensen",
+                    "given": "G."
+                },
+                {
+                    "family": "Contestabile",
+                    "given": "M."
+                },
+                {
+                    "family": "Dafoe",
+                    "given": "A."
+                },
+                {
+                    "family": "Eich",
+                    "given": "E."
+                },
+                {
+                    "family": "Freese",
+                    "given": "J."
+                },
+                {
+                    "family": "Glennerster",
+                    "given": "R."
+                },
+                {
+                    "family": "Goroff",
+                    "given": "D."
+                },
+                {
+                    "family": "Green",
+                    "given": "D. P."
+                },
+                {
+                    "family": "Hesse",
+                    "given": "B."
+                },
+                {
+                    "family": "Humphreys",
+                    "given": "M."
+                },
+                {
+                    "family": "Ishiyama",
+                    "given": "J."
+                },
+                {
+                    "family": "Karlan",
+                    "given": "D."
+                },
+                {
+                    "family": "Kraut",
+                    "given": "A."
+                },
+                {
+                    "family": "Lupia",
+                    "given": "A."
+                },
+                {
+                    "family": "Mabry",
+                    "given": "P."
+                },
+                {
+                    "family": "Madon",
+                    "given": "T."
+                },
+                {
+                    "family": "Malhotra",
+                    "given": "N."
+                },
+                {
+                    "family": "Mayo-Wilson",
+                    "given": "E."
+                },
+                {
+                    "family": "McNutt",
+                    "given": "M."
+                },
+                {
+                    "family": "Miguel",
+                    "given": "E."
+                },
+                {
+                    "family": "Paluck",
+                    "given": "E. L."
+                },
+                {
+                    "family": "Simonsohn",
+                    "given": "U."
+                },
+                {
+                    "family": "Soderberg",
+                    "given": "C."
+                },
+                {
+                    "family": "Spellman",
+                    "given": "B. A."
+                },
+                {
+                    "family": "Turitto",
+                    "given": "J."
+                },
+                {
+                    "family": "VandenBos",
+                    "given": "G."
+                },
+                {
+                    "family": "Vazire",
+                    "given": "S."
+                },
+                {
+                    "family": "Wagenmakers",
+                    "given": "E. J."
+                },
+                {
+                    "family": "Wilson",
+                    "given": "R."
+                },
+                {
+                    "family": "Yarkoni",
+                    "given": "T."
+                }
+            ],
+            "container-title": "Science",
+            "id": "nosek_top_2015",
+            "issue": "6242",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015
+                    ]
+                ]
+            },
+            "page": "1422-1425",
+            "title": "Promoting an open research culture",
+            "type": "article-journal",
+            "volume": "348"
+        },
+        {
+            "DOI": "10.1080/14763141.2016.1246603",
+            "author": [
+                {
+                    "family": "Knudson",
+                    "given": "Duane"
+                }
+            ],
+            "container-title": "Sports Biomechanics",
+            "id": "knudson_confidence_2017",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017
+                    ]
+                ]
+            },
+            "page": "425-433",
+            "title": "Confidence crisis of results in biomechanics research",
+            "type": "article-journal",
+            "volume": "16"
+        },
+        {
+            "DOI": "10.7717/peerj.10314",
+            "author": [
+                {
+                    "family": "Caldwell",
+                    "given": "Aaron R."
+                },
+                {
+                    "family": "Vigotsky",
+                    "given": "Andrew D."
+                }
+            ],
+            "container-title": "PeerJ",
+            "id": "caldwell_vigotsky_2020",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "page": "e10314",
+            "title": "A case against default effect sizes in sport and exercise science",
+            "type": "article-journal",
+            "volume": "8"
+        },
+        {
+            "DOI": "10.1177/1745691620979806",
+            "author": [
+                {
+                    "family": "Hardwicke",
+                    "given": "Tom E."
+                },
+                {
+                    "family": "Thíbáult",
+                    "given": "Robert T."
+                },
+                {
+                    "family": "Kosie",
+                    "given": "Jessica E."
+                },
+                {
+                    "family": "Wallach",
+                    "given": "Joshua D."
+                },
+                {
+                    "family": "Kidwell",
+                    "given": "Mallory C."
+                },
+                {
+                    "family": "Ioannidis",
+                    "given": "John P. A."
+                }
+            ],
+            "container-title": "Perspectives on Psychological Science",
+            "id": "hardwicke_psych_2022",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "page": "239-251",
+            "title": "Estimating the prevalence of transparency and reproducibility-related research practices in psychology (2014–2017)",
+            "type": "article-journal",
+            "volume": "17"
+        },
+        {
+            "DOI": "10.1098/rsbl.2019.0174",
+            "author": [
+                {
+                    "family": "Halsey",
+                    "given": "Lewis G."
+                }
+            ],
+            "container-title": "Biology Letters",
+            "id": "halsey_reign_2019",
+            "issue": "5",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "page": "20190174",
+            "title": "The reign of the p-value is over: What alternative analyses could we employ to fill the power vacuum?",
+            "title-short": "The reign of the p-value is over",
+            "type": "article-journal",
+            "volume": "15"
+        },
+        {
+            "DOI": "10.1038/sdata.2016.18",
+            "author": [
+                {
+                    "family": "Wilkinson",
+                    "given": "Mark D."
+                },
+                {
+                    "family": "Dumontier",
+                    "given": "Michel"
+                },
+                {
+                    "family": "Aalbersberg",
+                    "given": "IJsbrand Jan"
+                },
+                {
+                    "family": "Appleton",
+                    "given": "Gabrielle"
+                },
+                {
+                    "family": "Axton",
+                    "given": "Myles"
+                },
+                {
+                    "family": "Baak",
+                    "given": "Arie"
+                },
+                {
+                    "family": "Blomberg",
+                    "given": "Niklas"
+                },
+                {
+                    "family": "Boiten",
+                    "given": "Jan-Willem"
+                },
+                {
+                    "dropping-particle": "da",
+                    "family": "Silva Santos",
+                    "given": "Luiz Bonino"
+                },
+                {
+                    "family": "Bourne",
+                    "given": "Philip E."
+                },
+                {
+                    "literal": "others"
+                }
+            ],
+            "container-title": "Scientific Data",
+            "id": "wilkinson_fair_2016",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "page": "160018",
+            "title": "The FAIR Guiding Principles for scientific data management and stewardship",
+            "type": "article-journal",
+            "volume": "3"
+        },
+        {
+            "DOI": "10.1177/1948550617697177",
+            "author": [
+                {
+                    "family": "Lakens",
+                    "given": "Daniël"
+                }
+            ],
+            "container-title": "Social Psychological and Personality Science",
+            "id": "lakens_equivalence_2017",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017
+                    ]
+                ]
+            },
+            "page": "355-362",
+            "title": "Equivalence tests: A practical primer for t-tests, correlations, and meta-analyses",
+            "title-short": "Equivalence tests",
+            "type": "article-journal",
+            "volume": "8"
+        },
+        {
+            "DOI": "10.3390/data1030014",
+            "author": [
+                {
+                    "family": "Hartgerink",
+                    "given": "Chris H. J."
+                }
+            ],
+            "container-title": "Data",
+            "id": "hartgerink_688112_2016",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "page": "14",
+            "title": "688,112 statistical results: Content mining psychology articles for statistical test results",
+            "title-short": "688,112 statistical results",
+            "type": "article-journal",
+            "volume": "1"
+        },
+        {
+            "DOI": "10.1249/MSS.0000000000001645",
+            "author": [
+                {
+                    "family": "Sainani",
+                    "given": "Kristin L."
+                }
+            ],
+            "container-title": "Medicine and Science in Sports and Exercise",
+            "id": "sainani_mbi_2018",
+            "issue": "10",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "page": "2166-2176",
+            "title": "The problem with “magnitude-based inference”",
+            "type": "article-journal",
+            "volume": "50"
+        },
+        {
+            "DOI": "10.1007/s40279-019-01227-1",
+            "author": [
+                {
+                    "family": "Caldwell",
+                    "given": "Aaron R."
+                },
+                {
+                    "family": "Vigotsky",
+                    "given": "Andrew D."
+                },
+                {
+                    "family": "Tenan",
+                    "given": "Matthew S."
+                },
+                {
+                    "family": "Radel",
+                    "given": "Rémi"
+                },
+                {
+                    "family": "Mellor",
+                    "given": "David T."
+                },
+                {
+                    "family": "Kreutzer",
+                    "given": "Andreas"
+                },
+                {
+                    "family": "Lahart",
+                    "given": "Ian M."
+                },
+                {
+                    "family": "Mills",
+                    "given": "John P."
+                },
+                {
+                    "family": "Boisgontier",
+                    "given": "Matthieu P."
+                }
+            ],
+            "container-title": "Sports Medicine",
+            "id": "caldwell_moving_2020",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "page": "449-459",
+            "title": "Moving sport and exercise science forward: A call for the adoption of more transparent research practices",
+            "title-short": "Moving sport and exercise science forward",
+            "type": "article-journal",
+            "volume": "50"
+        },
+        {
+            "URL": "https://dplyr.tidyverse.org",
+            "author": [
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                },
+                {
+                    "family": "François",
+                    "given": "Romain"
+                },
+                {
+                    "family": "Henry",
+                    "given": "Lionel"
+                },
+                {
+                    "family": "Müller",
+                    "given": "Kirill"
+                },
+                {
+                    "family": "Vaughan",
+                    "given": "Davis"
+                }
+            ],
+            "id": "R-dplyr",
+            "issued": {
+                "date-parts": [
+                    [
+                        2026
+                    ]
+                ]
+            },
+            "note": "R package version 1.2.1",
+            "title": "Dplyr: A grammar of data manipulation",
+            "title-short": "Dplyr",
+            "type": "book"
+        },
+        {
+            "URL": "https://ardata-fr.github.io/flextable-book/",
+            "author": [
+                {
+                    "family": "Gohel",
+                    "given": "David"
+                },
+                {
+                    "family": "Skintzos",
+                    "given": "Panagiotis"
+                }
+            ],
+            "id": "R-flextable",
+            "issued": {
+                "date-parts": [
+                    [
+                        2026
+                    ]
+                ]
+            },
+            "note": "R package version 0.9.11",
+            "title": "Flextable: Functions for tabular reporting",
+            "title-short": "Flextable",
+            "type": "book"
+        },
+        {
+            "URL": "https://here.r-lib.org/",
+            "author": [
+                {
+                    "family": "Müller",
+                    "given": "Kirill"
+                }
+            ],
+            "id": "R-here",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "note": "R package version 1.0.2",
+            "title": "Here: A simpler way to find your files",
+            "title-short": "Here",
+            "type": "book"
+        },
+        {
+            "URL": "https://yihui.org/knitr/",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                }
+            ],
+            "id": "R-knitr",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "note": "R package version 1.51",
+            "title": "Knitr: A general-purpose package for dynamic report generation in r",
+            "title-short": "Knitr",
+            "type": "book"
+        },
+        {
+            "URL": "https://readr.tidyverse.org",
+            "author": [
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                },
+                {
+                    "family": "Hester",
+                    "given": "Jim"
+                },
+                {
+                    "family": "Bryan",
+                    "given": "Jennifer"
+                }
+            ],
+            "id": "R-readr",
+            "issued": {
+                "date-parts": [
+                    [
+                        2026
+                    ]
+                ]
+            },
+            "note": "R package version 2.2.0",
+            "title": "Readr: Read rectangular text data",
+            "title-short": "Readr",
+            "type": "book"
+        },
+        {
+            "URL": "https://readxl.tidyverse.org",
+            "author": [
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                },
+                {
+                    "family": "Bryan",
+                    "given": "Jennifer"
+                }
+            ],
+            "id": "R-readxl",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "note": "R package version 1.4.5",
+            "title": "Readxl: Read excel files",
+            "title-short": "Readxl",
+            "type": "book"
+        },
+        {
+            "URL": "https://scales.r-lib.org",
+            "author": [
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                },
+                {
+                    "family": "Pedersen",
+                    "given": "Thomas Lin"
+                },
+                {
+                    "family": "Seidel",
+                    "given": "Dana"
+                }
+            ],
+            "id": "R-scales",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "note": "R package version 1.4.0",
+            "title": "Scales: Scale functions for visualization",
+            "title-short": "Scales",
+            "type": "book"
+        },
+        {
+            "URL": "https://github.com/MicheleNuijten/statcheck",
+            "author": [
+                {
+                    "family": "Nuijten",
+                    "given": "Michele B."
+                },
+                {
+                    "family": "Epskamp",
+                    "given": "Sacha"
+                }
+            ],
+            "id": "R-statcheck",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "note": "R package version 1.5.0",
+            "title": "Statcheck: Extract statistics from articles and recompute p-values",
+            "title-short": "Statcheck",
+            "type": "book"
+        },
+        {
+            "URL": "https://stringr.tidyverse.org",
+            "author": [
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                }
+            ],
+            "id": "R-stringr",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "note": "R package version 1.6.0",
+            "title": "Stringr: Simple, consistent wrappers for common string operations",
+            "title-short": "Stringr",
+            "type": "book"
+        },
+        {
+            "URL": "https://tibble.tidyverse.org/",
+            "author": [
+                {
+                    "family": "Müller",
+                    "given": "Kirill"
+                },
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                }
+            ],
+            "id": "R-tibble",
+            "issued": {
+                "date-parts": [
+                    [
+                        2026
+                    ]
+                ]
+            },
+            "note": "R package version 3.3.1",
+            "title": "Tibble: Simple data frames",
+            "title-short": "Tibble",
+            "type": "book"
+        },
+        {
+            "URL": "https://tidyr.tidyverse.org",
+            "author": [
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                },
+                {
+                    "family": "Vaughan",
+                    "given": "Davis"
+                },
+                {
+                    "family": "Girlich",
+                    "given": "Maximilian"
+                }
+            ],
+            "id": "R-tidyr",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "note": "R package version 1.3.2",
+            "title": "Tidyr: Tidy messy data",
+            "title-short": "Tidyr",
+            "type": "book"
+        },
+        {
+            "ISBN": "978-3-319-24277-4",
+            "URL": "https://ggplot2.tidyverse.org",
+            "author": [
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                }
+            ],
+            "id": "ggplot22016",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "publisher": "Springer-Verlag New York",
+            "title": "ggplot2: Elegant graphics for data analysis",
+            "title-short": "ggplot2",
+            "type": "book"
+        },
+        {
+            "URL": "https://yihui.org/knitr/",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                }
+            ],
+            "edition": "2nd",
+            "id": "knitr2015",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015
+                    ]
+                ]
+            },
+            "note": "ISBN 978-1498716963",
+            "publisher": "Chapman; Hall/CRC",
+            "publisher-place": "Boca Raton, Florida",
+            "title": "Dynamic documents with R and knitr",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                }
+            ],
+            "container-title": "Implementing reproducible computational research",
+            "editor": [
+                {
+                    "family": "Stodden",
+                    "given": "Victoria"
+                },
+                {
+                    "family": "Leisch",
+                    "given": "Friedrich"
+                },
+                {
+                    "family": "Peng",
+                    "given": "Roger D."
+                }
+            ],
+            "id": "knitr2014",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014
+                    ]
+                ]
+            },
+            "note": "ISBN 978-1466561595",
+            "publisher": "Chapman; Hall/CRC",
+            "title": "Knitr: A comprehensive tool for reproducible research in R",
+            "title-short": "Knitr",
+            "type": "chapter"
+        },
+        {
+            "DOI": "10.32614/CRAN.package.quarto",
+            "URL": "https://CRAN.R-project.org/package=quarto",
+            "author": [
+                {
+                    "family": "Allaire",
+                    "given": "JJ"
+                },
+                {
+                    "family": "Dervieux",
+                    "given": "Christophe"
+                }
+            ],
+            "id": "quarto",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "note": "R package version 1.5.1",
+            "title": "Quarto: R interface to ’quarto’ markdown publishing system",
+            "title-short": "Quarto",
+            "type": "book"
+        },
+        {
+            "URL": "https://www.R-project.org/",
+            "author": [
+                {
+                    "literal": "R Core Team"
+                }
+            ],
+            "id": "R-studio",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "publisher": "R Foundation for Statistical Computing",
+            "publisher-place": "Vienna, Austria",
+            "title": "R: A language and environment for statistical computing",
+            "title-short": "R",
+            "type": "book"
+        }
+    ],
     "project_biblios": []
 }

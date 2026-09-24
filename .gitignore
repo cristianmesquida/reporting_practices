@@ -9,4 +9,6 @@ files/xml_files/
 trackdown.R
 .Rproj.user
 .claude
-articles_xml.Rds
+files/articles_xml.Rds
+.Rhistory
+**/.Rhistory

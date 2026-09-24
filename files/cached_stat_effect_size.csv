@@ -1,0 +1,764 @@
+paper_id,test,has_es,verdict,note
+10.1016:j.jsams.2020.09.011,t-test,FALSE,indeterminate,No parseable t(df)=value found.
+10.1016:j.jsams.2020.09.011,t-test,TRUE,indeterminate,No parseable t(df)=value found.
+10.1016:j.jsams.2020.09.011,t-test,FALSE,indeterminate,No parseable t(df)=value found.
+10.1016:j.jsams.2020.09.011,t-test,TRUE,indeterminate,No parseable t(df)=value found.
+10.1016:j.jsams.2020.09.011,t-test,FALSE,indeterminate,No parseable t(df)=value found.
+10.1016:j.jsams.2020.09.011,t-test,TRUE,indeterminate,No parseable t(df)=value found.
+10.1016:j.jsams.2020.09.011,t-test,TRUE,indeterminate,No parseable t(df)=value found.
+10.1016:j.jsams.2020.09.011,t-test,TRUE,indeterminate,No parseable t(df)=value found.
+10.1016:j.psychsport.2017.11.004,t-test,FALSE,indeterminate,No parseable t(df)=value found.
+10.1016:j.psychsport.2017.11.004,t-test,FALSE,indeterminate,No parseable t(df)=value found.
+10.1016:j.psychsport.2018.02.009,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.02.009,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.02.009,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.02.009,t-test,TRUE,no_match,"No match under tested assumptions (paired dz, independent equal-n, independent unequal-n range). Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported."
+10.1016:j.psychsport.2018.02.009,t-test,TRUE,no_match,"No match under tested assumptions (paired dz, independent equal-n, independent unequal-n range). Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported."
+10.1016:j.psychsport.2018.02.009,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.02.009,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1016:j.psychsport.2018.02.009,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.02.009,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.02.009,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.02.009,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1016:j.psychsport.2018.02.009,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.02.009,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.02.009,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.02.009,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.02.009,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.02.009,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1016:j.psychsport.2018.02.009,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.02.009,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.02.009,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1016:j.psychsport.2018.02.009,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.02.009,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1016:j.psychsport.2018.02.009,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2018.03.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.03.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.03.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.03.001,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1016:j.psychsport.2018.03.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.03.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.03.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.03.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.03.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.03.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.06.010,t-test,FALSE,indeterminate,No parseable t(df)=value found.
+10.1016:j.psychsport.2018.06.010,t-test,FALSE,indeterminate,No parseable t(df)=value found.
+10.1016:j.psychsport.2018.06.010,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2018.06.010,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.06.010,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.06.010,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1016:j.psychsport.2018.06.010,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1016:j.psychsport.2018.06.010,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1016:j.psychsport.2018.06.010,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1016:j.psychsport.2018.06.010,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1016:j.psychsport.2018.06.010,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.06.010,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.06.010,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.06.010,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2018.06.010,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1016:j.psychsport.2018.06.010,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.06.010,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1016:j.psychsport.2018.06.010,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.06.010,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.06.010,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.06.010,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.06.010,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2018.06.010,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2018.06.010,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1016:j.psychsport.2018.06.010,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.06.010,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1016:j.psychsport.2018.06.010,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.06.010,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1016:j.psychsport.2018.06.010,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.06.010,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2018.12.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.12.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.12.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.12.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.12.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.12.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.12.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.12.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.12.001,t-test,TRUE,match_under_assumptions,Match under paired-samples dz assumption.
+10.1016:j.psychsport.2018.12.001,t-test,TRUE,match_under_assumptions,Match under paired-samples dz assumption.
+10.1016:j.psychsport.2018.12.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.12.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.12.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.12.001,t-test,TRUE,no_match,"No match under tested assumptions (paired dz, independent equal-n, independent unequal-n range). Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported."
+10.1016:j.psychsport.2018.12.001,t-test,TRUE,match_under_assumptions,Match under paired-samples dz assumption.
+10.1016:j.psychsport.2018.12.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.12.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.12.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.12.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.12.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.12.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.12.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.12.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2018.12.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2019.01.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2019.01.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2019.01.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2019.01.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2019.01.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2019.01.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2019.01.001,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2019.01.001,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2019.01.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2019.01.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2019.01.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2019.01.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2019.01.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2019.01.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2019.01.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2019.01.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2019.01.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2019.01.001,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2019.01.001,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2019.01.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2019.01.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2019.01.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2019.01.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2019.01.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2019.01.001,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2019.04.014,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2019.04.014,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2019.04.014,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2019.04.014,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2019.04.014,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2019.04.014,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2019.04.014,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2019.04.014,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2019.04.014,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2019.04.016,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2019.04.016,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2019.04.016,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2019.04.016,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2019.04.016,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2019.04.016,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2019.04.016,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2019.101554,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2019.101554,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2019.101554,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2019.101554,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2019.101554,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2019.101554,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2019.101554,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2019.101554,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2020.101668,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101668,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101668,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101668,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101668,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101668,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101668,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101668,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101668,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101668,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101668,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101668,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101714,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2020.101714,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2020.101714,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2020.101714,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2020.101714,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2020.101714,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2020.101714,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2020.101714,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2020.101714,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2020.101714,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2020.101714,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2020.101722,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101722,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101722,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101722,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101722,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101722,t-test,TRUE,match_under_assumptions,Match under paired-samples dz assumption.
+10.1016:j.psychsport.2020.101722,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101722,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101722,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101722,t-test,TRUE,indeterminate,No parseable t(df)=value found.
+10.1016:j.psychsport.2020.101722,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101722,t-test,TRUE,no_match,"No match under tested assumptions (paired dz, independent equal-n, independent unequal-n range). Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported."
+10.1016:j.psychsport.2020.101722,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101722,t-test,TRUE,indeterminate,No parseable t(df)=value found.
+10.1016:j.psychsport.2020.101722,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101722,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101722,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2020.101722,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2020.101722,t-test,TRUE,match_under_assumptions,Match under paired-samples dz assumption.
+10.1016:j.psychsport.2020.101722,t-test,TRUE,match_under_assumptions,Match under paired-samples dz assumption.
+10.1016:j.psychsport.2020.101722,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2020.101722,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2020.101722,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2020.101722,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2020.101765,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2020.101765,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2020.101765,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2020.101765,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2020.101765,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2020.101765,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2020.101765,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2020.101765,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2020.101765,t-test,TRUE,match_under_assumptions,"Match under independent-samples unequal-n range assumption (closest split n1 = 6, n2 = 10, N = 16)."
+10.1016:j.psychsport.2020.101765,t-test,TRUE,match_under_assumptions,"Match under independent-samples unequal-n range assumption (closest split n1 = 6, n2 = 9, N = 15)."
+10.1016:j.psychsport.2020.101765,t-test,TRUE,match_under_assumptions,"Match under independent-samples unequal-n range assumption (closest split n1 = 8, n2 = 13, N = 21)."
+10.1016:j.psychsport.2021.101887,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2021.101887,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2021.101887,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2021.101887,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2021.101887,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2021.101887,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2021.101887,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2021.101887,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2021.101887,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2021.101887,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2021.101887,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2021.101887,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2021.101887,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2021.101887,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2021.101887,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2021.101887,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2021.101887,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2021.101913,t-test,TRUE,match_under_assumptions,"Match under independent-samples equal-n assumption (n1 = n2 = 14, N = 28)."
+10.1016:j.psychsport.2021.101913,t-test,TRUE,indeterminate,Non-integer df indicates Welch's t-test (unequal variances); sample sizes cannot be determined.
+10.1016:j.psychsport.2021.101913,t-test,TRUE,indeterminate,Non-integer df indicates Welch's t-test (unequal variances); sample sizes cannot be determined.
+10.1016:j.psychsport.2021.101913,t-test,TRUE,match_under_assumptions,"Match under independent-samples equal-n assumption (n1 = n2 = 14, N = 28)."
+10.1016:j.psychsport.2021.101913,t-test,TRUE,match_under_assumptions,"Match under independent-samples equal-n assumption (n1 = n2 = 14, N = 28)."
+10.1016:j.psychsport.2021.101913,t-test,TRUE,match_under_assumptions,"Match under independent-samples equal-n assumption (n1 = n2 = 14, N = 28)."
+10.1016:j.psychsport.2021.101913,t-test,TRUE,match_under_assumptions,"Match under independent-samples equal-n assumption (n1 = n2 = 14, N = 28)."
+10.1016:j.psychsport.2021.101913,t-test,TRUE,match_under_assumptions,"Match under independent-samples unequal-n range assumption (closest split n1 = 8, n2 = 50, N = 58)."
+10.1016:j.psychsport.2021.101913,t-test,TRUE,match_under_assumptions,"Match under independent-samples unequal-n range assumption (closest split n1 = 9, n2 = 49, N = 58)."
+10.1016:j.psychsport.2021.101913,t-test,TRUE,match_under_assumptions,"Match under independent-samples unequal-n range assumption (closest split n1 = 10, n2 = 48, N = 58)."
+10.1016:j.psychsport.2021.101913,t-test,TRUE,match_under_assumptions,"Match under independent-samples unequal-n range assumption (closest split n1 = 6, n2 = 52, N = 58)."
+10.1016:j.psychsport.2021.101913,t-test,TRUE,match_under_assumptions,"Match under independent-samples unequal-n range assumption (closest split n1 = 9, n2 = 49, N = 58)."
+10.1016:j.psychsport.2021.101913,t-test,TRUE,match_under_assumptions,"Match under independent-samples unequal-n range assumption (closest split n1 = 10, n2 = 48, N = 58)."
+10.1016:j.psychsport.2021.101913,t-test,TRUE,indeterminate,Non-integer df indicates Welch's t-test (unequal variances); sample sizes cannot be determined.
+10.1016:j.psychsport.2021.101913,t-test,TRUE,indeterminate,Non-integer df indicates Welch's t-test (unequal variances); sample sizes cannot be determined.
+10.1016:j.psychsport.2021.101913,t-test,TRUE,indeterminate,Non-integer df indicates Welch's t-test (unequal variances); sample sizes cannot be determined.
+10.1016:j.psychsport.2021.101913,t-test,TRUE,no_match,"No match under tested assumptions (paired dz, independent equal-n, independent unequal-n range). Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported."
+10.1016:j.psychsport.2021.101913,t-test,TRUE,no_match,"No match under tested assumptions (paired dz, independent equal-n, independent unequal-n range). Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported."
+10.1016:j.psychsport.2021.101913,t-test,TRUE,no_match,"No match under tested assumptions (paired dz, independent equal-n, independent unequal-n range). Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported."
+10.1016:j.psychsport.2021.101913,t-test,TRUE,no_match,"No match under tested assumptions (paired dz, independent equal-n, independent unequal-n range). Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported."
+10.1016:j.psychsport.2021.101913,t-test,TRUE,no_match,"No match under tested assumptions (paired dz, independent equal-n, independent unequal-n range). Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported."
+10.1016:j.psychsport.2021.101913,t-test,TRUE,no_match,"No match under tested assumptions (paired dz, independent equal-n, independent unequal-n range). Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported."
+10.1016:j.psychsport.2021.101913,t-test,TRUE,no_match,"No match under tested assumptions (paired dz, independent equal-n, independent unequal-n range). Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported."
+10.1016:j.psychsport.2021.101913,t-test,TRUE,no_match,"No match under tested assumptions (paired dz, independent equal-n, independent unequal-n range). Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported."
+10.1016:j.psychsport.2021.101944,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2021.101944,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2021.101944,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2021.101944,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2021.101944,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2021.101944,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1016:j.psychsport.2021.101944,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1016:j.psychsport.2021.101944,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2021.101944,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2021.101944,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2021.101944,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2021.101944,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2021.101944,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1016:j.psychsport.2021.101944,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2021.101944,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2021.102096,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2021.102096,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2021.102096,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2021.102096,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2021.102096,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2021.102096,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2021.102096,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2021.102096,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2021.102096,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2021.102096,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2021.102096,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2021.102096,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2021.102096,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2021.102096,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2021.102096,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2021.102096,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2021.102096,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1016:j.psychsport.2021.102096,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2021.102120,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2021.102120,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2021.102120,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2022.102144,F-test,TRUE,indeterminate,Cohen's f not checked: cannot determine whether based on eta squared or partial eta squared.
+10.1016:j.psychsport.2022.102144,F-test,TRUE,indeterminate,Cohen's f not checked: cannot determine whether based on eta squared or partial eta squared.
+10.1016:j.psychsport.2022.102144,F-test,TRUE,indeterminate,Cohen's f not checked: cannot determine whether based on eta squared or partial eta squared.
+10.1016:j.psychsport.2022.102144,F-test,TRUE,indeterminate,Cohen's f not checked: cannot determine whether based on eta squared or partial eta squared.
+10.1016:j.psychsport.2022.102144,F-test,TRUE,indeterminate,Cohen's f not checked: cannot determine whether based on eta squared or partial eta squared.
+10.1016:j.psychsport.2022.102144,F-test,TRUE,indeterminate,Cohen's f not checked: cannot determine whether based on eta squared or partial eta squared.
+10.1016:j.psychsport.2022.102144,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102144,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102144,F-test,TRUE,indeterminate,"No parseable F(df1,df2)=value found."
+10.1016:j.psychsport.2022.102144,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102144,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102144,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102144,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102144,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102144,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102144,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102144,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102144,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102144,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102144,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102210,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102210,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102210,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102210,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102210,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102210,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102210,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102210,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102210,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102210,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102210,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102210,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102210,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2022.102211,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2022.102211,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2022.102211,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2022.102211,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102211,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102211,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102211,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102211,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102211,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2022.102211,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2022.102300,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102300,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102300,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102300,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102300,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102300,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102300,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102300,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102300,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102300,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102300,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102301,t-test,TRUE,match_under_assumptions,"Match under independent-samples equal-n assumption (n1 = n2 = 33, N = 66)."
+10.1016:j.psychsport.2022.102301,t-test,TRUE,match_under_assumptions,"Match under independent-samples equal-n assumption (n1 = n2 = 33, N = 66)."
+10.1016:j.psychsport.2022.102301,t-test,TRUE,match_under_assumptions,"Match under independent-samples equal-n assumption (n1 = n2 = 33, N = 66)."
+10.1016:j.psychsport.2022.102301,t-test,TRUE,match_under_assumptions,"Match under independent-samples equal-n assumption (n1 = n2 = 33, N = 66)."
+10.1016:j.psychsport.2022.102301,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102301,t-test,TRUE,match_under_assumptions,"Match under independent-samples unequal-n range assumption (closest split n1 = 27, n2 = 38, N = 65)."
+10.1016:j.psychsport.2022.102301,t-test,TRUE,match_under_assumptions,"Match under independent-samples unequal-n range assumption (closest split n1 = 29, n2 = 36, N = 65)."
+10.1016:j.psychsport.2022.102301,t-test,TRUE,match_under_assumptions,"Match under independent-samples equal-n assumption (n1 = n2 = 32.5, N = 65)."
+10.1016:j.psychsport.2022.102301,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102301,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102301,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102301,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102301,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102301,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102301,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102301,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102301,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102301,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102301,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102332,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102332,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2022.102332,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2022.102332,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2022.102332,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1016:j.psychsport.2022.102332,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102332,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1016:j.psychsport.2022.102332,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102332,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102332,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1016:j.psychsport.2022.102332,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102332,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102332,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2022.102332,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2023.102422,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2023.102422,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2023.102422,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2023.102422,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2023.102422,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1016:j.psychsport.2023.102422,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1016:j.psychsport.2023.102459,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2020.1756681,t-test,TRUE,no_match,"No match under tested assumptions (paired dz, independent equal-n, independent unequal-n range). Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported."
+10.1080:02640414.2020.1756681,t-test,FALSE,indeterminate,No parseable t(df)=value found.
+10.1080:02640414.2020.1756681,t-test,FALSE,indeterminate,No parseable t(df)=value found.
+10.1080:02640414.2020.1756681,t-test,FALSE,indeterminate,No parseable t(df)=value found.
+10.1080:02640414.2020.1756681,t-test,FALSE,indeterminate,No parseable t(df)=value found.
+10.1080:02640414.2020.1805850,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1080:02640414.2020.1809974,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:02640414.2020.1809974,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:02640414.2020.1809974,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2020.1809974,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2020.1809974,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2020.1809974,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2020.1809974,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2020.1809974,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2020.1809974,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2020.1809974,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2020.1809974,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2020.1809974,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2020.1809974,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2020.1809974,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2020.1809974,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2020.1809974,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2020.1809974,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2020.1809975,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2020.1809975,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2020.1809975,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2020.1809975,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2020.1809975,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2020.1809975,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2020.1809975,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2020.1809975,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2020.1809976,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1080:02640414.2020.1809976,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1080:02640414.2020.1824340,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:02640414.2020.1824340,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:02640414.2021.1957294,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2021.1957294,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2021.1957294,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:02640414.2022.2150419,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:02640414.2022.2150419,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:02640414.2022.2150419,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:02640414.2022.2150419,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:02640414.2022.2150419,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1080:17461391.2019.1595739,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:17461391.2019.1595739,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:17461391.2019.1595739,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:17461391.2019.1595739,t-test,TRUE,no_match,"No match under tested assumptions (paired dz, independent equal-n, independent unequal-n range). Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported."
+10.1080:17461391.2019.1595739,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:17461391.2019.1595739,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:17461391.2019.1595739,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:17461391.2019.1595739,t-test,TRUE,match_under_assumptions,"Match under independent-samples equal-n assumption (n1 = n2 = 53.5, N = 107)."
+10.1080:17461391.2019.1595739,t-test,TRUE,no_match,"No match under tested assumptions (paired dz, independent equal-n, independent unequal-n range). Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported."
+10.1080:17461391.2019.1595739,t-test,TRUE,no_match,"No match under tested assumptions (paired dz, independent equal-n, independent unequal-n range). Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported."
+10.1080:17461391.2019.1595739,t-test,TRUE,no_match,"No match under tested assumptions (paired dz, independent equal-n, independent unequal-n range). Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported."
+10.1080:17461391.2019.1595739,t-test,TRUE,match_under_assumptions,"Match under independent-samples equal-n assumption (n1 = n2 = 53.5, N = 107)."
+10.1080:17461391.2019.1595739,t-test,TRUE,no_match,"No match under tested assumptions (paired dz, independent equal-n, independent unequal-n range). Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported."
+10.1080:17461391.2019.1611931,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:17461391.2019.1611931,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:17461391.2019.1611931,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:17461391.2019.1611931,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:17461391.2019.1611931,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:17461391.2019.1611931,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:17461391.2019.1611931,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:17461391.2019.1611931,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:17461391.2019.1611931,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:17461391.2019.1611931,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1080:17461391.2019.1611931,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1080:17461391.2019.1611931,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1080:17461391.2020.1722255,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:17461391.2020.1722255,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:17461391.2020.1728389,t-test,FALSE,indeterminate,No parseable t(df)=value found.
+10.1080:17461391.2020.1739144,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1080:17461391.2020.1739144,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1080:17461391.2020.1809714,t-test,TRUE,match_under_assumptions,Match under paired-samples dz assumption.
+10.1080:17461391.2020.1809714,t-test,TRUE,match_under_assumptions,Match under paired-samples dz assumption.
+10.1080:17461391.2020.1809714,t-test,TRUE,match_under_assumptions,Match under paired-samples dz assumption.
+10.1080:17461391.2020.1809714,t-test,TRUE,match_under_assumptions,Match under paired-samples dz assumption.
+10.1080:17461391.2020.1809714,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:17461391.2020.1809714,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:17461391.2020.1809714,t-test,TRUE,match_under_assumptions,Match under paired-samples dz assumption.
+10.1080:17461391.2020.1809714,t-test,TRUE,no_match,"No match under tested assumptions (paired dz, independent equal-n, independent unequal-n range). Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported."
+10.1080:17461391.2020.1809714,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1080:17461391.2020.1809714,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1080:17461391.2020.1809714,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1080:17461391.2020.1809714,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1080:17461391.2020.1838617,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:17461391.2020.1838617,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:17461391.2020.1838617,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:17461391.2020.1838617,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:17461391.2020.1838617,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:17461391.2020.1838617,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:17461391.2020.1838617,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1080:17461391.2020.1862305,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:17461391.2020.1862305,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1080:17461391.2020.1862305,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1111:sms.14072,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1111:sms.14072,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1111:sms.14072,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1111:sms.14072,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1111:sms.14072,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1111:sms.14072,t-test,TRUE,indeterminate,No parseable d effect size found.
+10.1111:sms.14101,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1111:sms.14101,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1111:sms.14101,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1111:sms.14101,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1111:sms.14123,t-test,TRUE,indeterminate,No parseable t(df)=value found.
+10.1111:sms.14123,t-test,TRUE,indeterminate,No parseable t(df)=value found.
+10.1111:sms.14192,t-test,TRUE,indeterminate,No parseable t(df)=value found.
+10.1111:sms.14192,t-test,TRUE,indeterminate,No parseable t(df)=value found.
+10.1111:sms.14192,t-test,TRUE,indeterminate,No parseable t(df)=value found.
+10.1111:sms.14192,t-test,TRUE,indeterminate,No parseable t(df)=value found.
+10.1111:sms.14192,t-test,TRUE,indeterminate,No parseable t(df)=value found.
+10.1111:sms.14192,t-test,TRUE,indeterminate,No parseable t(df)=value found.
+10.1111:sms.14192,t-test,TRUE,indeterminate,No parseable t(df)=value found.
+10.1111:sms.14192,t-test,TRUE,indeterminate,No parseable t(df)=value found.
+10.1111:sms.14192,t-test,TRUE,indeterminate,No parseable t(df)=value found.
+10.1111:sms.14192,t-test,TRUE,indeterminate,No parseable t(df)=value found.
+10.1111:sms.14192,t-test,TRUE,indeterminate,No parseable t(df)=value found.
+10.1111:sms.14237,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1111:sms.14237,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1111:sms.14237,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1111:sms.14237,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1111:sms.14237,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1111:sms.14321,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1111:sms.14457,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1111:sms.14457,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1111:sms.14457,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1111:sms.14457,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1111:sms.14457,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1111:sms.14457,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1111:sms.14457,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1111:sms.14457,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1111:sms.14457,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1111:sms.14457,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1111:sms.14457,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1111:sms.14457,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1111:sms.14457,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1111:sms.14457,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1111:sms.14457,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1111:sms.14457,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1111:sms.14457,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1111:sms.14457,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1111:sms.14457,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1111:sms.14457,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1111:sms.14457,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1111:sms.14457,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1111:sms.14457,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1111:sms.14457,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1111:sms.14457,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1111:sms.14457,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1111:sms.14457,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1111:sms.14457,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1111:sms.14457,F-test,TRUE,match_under_assumptions,Match under partial eta-squared formula from F and dfs.
+10.1111:sms.14457,F-test,TRUE,no_match,No match under partial eta-squared formula from F and dfs. Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2019-0308,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0034,F-test,TRUE,indeterminate,Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.
+10.1123:ijsnem.2020-0054,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0054,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0054,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0054,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0054,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0054,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0054,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0054,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0126,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0126,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0126,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0126,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0126,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0126,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0126,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0126,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0126,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0126,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0126,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0126,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0126,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0126,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0126,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0126,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0126,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0126,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0126,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijsnem.2020-0126,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1123:ijspp.2019-0923,t-test,TRUE,indeterminate,No parseable t(df)=value found.
+10.1123:ijspp.2019-0923,t-test,FALSE,indeterminate,No parseable t(df)=value found.
+10.1123:ijspp.2019-0923,t-test,FALSE,indeterminate,No parseable t(df)=value found.
+10.1123:ijspp.2020-0191,t-test,FALSE,indeterminate,No parseable t(df)=value found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,"No parseable F(df1,df2)=value found."
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1152:japplphysiol.00688.2021,F-test,FALSE,indeterminate,No parseable eta-squared effect size found.
+10.1249:MSS.0000000000002148,t-test,FALSE,indeterminate,No parseable d effect size found.
+10.1249:MSS.0000000000002248,t-test,TRUE,match_under_assumptions,"Match under independent-samples equal-n assumption (n1 = n2 = 16, N = 32)."
+10.1249:MSS.0000000000002248,t-test,TRUE,no_match,"No match under tested assumptions (paired dz, independent equal-n, independent unequal-n range). Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported."
+10.1249:MSS.0000000000002248,t-test,TRUE,match_under_assumptions,"Match under independent-samples unequal-n range assumption (closest split n1 = 9, n2 = 23, N = 32)."
+10.1249:MSS.0000000000002248,t-test,TRUE,match_under_assumptions,"Match under independent-samples equal-n assumption (n1 = n2 = 16, N = 32)."
+10.1249:MSS.0000000000002248,t-test,TRUE,no_match,"No match under tested assumptions (paired dz, independent equal-n, independent unequal-n range). Tolerance = 0.01. A no-match can occur when fewer than 2 decimal places are reported."
+10.1249:MSS.0000000000002541,t-test,FALSE,indeterminate,No parseable t(df)=value found.
+10.1249:MSS.0000000000002541,t-test,FALSE,indeterminate,No parseable t(df)=value found.
+10.1249:MSS.0000000000002706,t-test,FALSE,indeterminate,No parseable t(df)=value found.
+10.1249:MSS.0000000000002706,t-test,FALSE,indeterminate,No parseable t(df)=value found.
+10.1249:MSS.0000000000002706,t-test,FALSE,indeterminate,No parseable t(df)=value found.
+10.1249:MSS.0000000000002706,t-test,FALSE,indeterminate,No parseable t(df)=value found.
+10.1249:MSS.0000000000002706,t-test,FALSE,indeterminate,No parseable t(df)=value found.
+10.1249:MSS.0000000000002706,t-test,FALSE,indeterminate,No parseable t(df)=value found.

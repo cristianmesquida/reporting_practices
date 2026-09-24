@@ -11,6 +11,7 @@ knitr:
     echo: false
 editor: visual
 bibliography: references.bib
+csl: elsevier-harvard.csl
 ---
 
 #### Abstract
@@ -21,7 +22,7 @@ bibliography: references.bib
 
 **Methods.** Retrospective observational audit of 350 original research articles. Three trained raters double-coded each article for reporting of test statistics, degrees of freedom, exact *p*-values, effect sizes, effect-size confidence intervals, preregistration status, and raw-data availability. Where possible, *p*-value consistency was checked with *statcheck*. As an exploratory, non-pre-registered addition we applied the newly developed *Metacheck* tool to extract and reproduce every reported *t*- and *F*-test.
 
-**Results.** Whilst 94.6% of studies (95% CI 91.7–96.5%) reported a *p*-value for the main effect of interest, only 39.7% (34.7–44.9%) reported the corresponding test statistic and 28.9% (24.4–33.8%) reported the degrees of freedom needed to check it. An effect-size estimate was reported by 53.7% (48.5–58.9%) of studies, but only 7.7% (5.4–11.0%) of studies reported a confidence interval around that estimate. Only 1.7% (0.8–3.7%) studies provided a working link to publicly available raw data. Reproducibility of the primary *p*-value could be assessed in 132 of the 350 studies (37.7%); among the 119 checkable *F*-tests, 79 (66.4%) reproduced exactly, 32 (26.9%) were compatible with the reported statistical decision, 7 (5.9%) were incorrectly rounded, and 1 (0.8%) was incompatible (a decision error). All 12 checkable *t*-tests were compatible with the reported decision. The exploratory *Metacheck* sweep across 248 articles corroborated these patterns.
+**Results.** Whilst 94.6% of studies (95% CI 91.7–96.5%) reported a *p*-value for the main effect of interest, only 39.7% (34.7–44.9%) reported the corresponding test statistic and 28.9% (24.4–33.8%) reported the degrees of freedom needed to check it. An effect-size estimate was reported by 53.7% (48.5–58.9%) of studies, but only 7.7% (5.4–11.0%) of studies reported a confidence interval around that estimate. Only 1.7% (0.8–3.7%) studies provided a working link to publicly available raw data. Reproducibility of the primary *p*-value could be assessed in 132 of the 350 studies (37.7%); among the 119 checkable *F*-tests, 79 (66.4%) reproduced exactly, 31 (26.1%) were compatible with the reported statistical decision, 7 (5.9%) were incorrectly rounded, and 2 (1.7%) were incompatible (decision errors). All 12 checkable *t*-tests were compatible with the reported decision. The exploratory *Metacheck* sweep across 348 articles corroborated these patterns.
 
 **Conclusions.** Statistical reporting in applied SES is markedly incomplete and data sharing is essentially absent, despite long-standing calls for both. Where reporting is sufficient, *p*-values are largely reproducible, but since most articles fail to meet reporting standards, reproducibility remains unknown. Coordinated change by journals, reviewers, funders, and authors is required to improve data sharing and reporting practices. Automated checks (as offered by *Metacheck*) might facilitate the uptake of reporting standards.
 
@@ -29,7 +30,7 @@ bibliography: references.bib
 
 #### Affiliation
 
-^1^ School of Biological, Health and Sports Sciences, Technological University Dublin, Tallaght, Dublin, Irelandd
+^1^ School of Biological, Health and Sports Sciences, Technological University Dublin, Tallaght, Dublin, Ireland
 
 ^2^ Department of Sport Exercise and Nutrition, Atlantic Technological University, Galway, Ireland
 
@@ -81,9 +82,9 @@ invisible(lapply(packages, library, character.only = TRUE))
 
 # Introduction
 
-Most findings in the field of sport and exercise science (SES) are based on the results of null hypothesis significance testing (NHST). It is therefore important that NHST is performed correctly and that statistical results are reported accurately and completely. Long-standing critiques of *p*-value-only inference [@wasserstein_asa_2016; @wasserstein_schirm_lazar_2019; @amrhein_retire_2019; @halsey_reign_2019] and well-documented misinterpretations of *p*-values, confidence intervals, and statistical power [@greenland_misinterpretations_2016] underscore the need for transparent and complete reporting. There is also evidence from other fields, such as psychology, that some reported *p*-values do not match the test statistic and degrees of freedom from which they are derived [@bakker_misreporting_2011; @nuijten_prevalence_2016; @veldkamp_statistical_2014]. For instance, @nuijten_prevalence_2016 found that about half of screened published psychology articles using NHST contained at least one inconsistent *p*-value, and large-scale text-mining of psychology articles has shown the same pattern across hundreds of thousands of extracted results [@hartgerink_688112_2016]. This could be sloppy reporting (e.g., *p* \< 0.03 when *p* = 0.305, or *p* = .000 when *p*-values can never be 0) but may also reflect an inconsistent claim where the reported *p*-value is significant (*p* \< .05) and the computed *p*-value was not (*p* \> 0.05), or vice-versa. Issues such as these may suggest human error, but can also indicate opportunistic misreporting of statistical results. It is impossible to evaluate the consistency of *p*-values in the absence of either raw data, or fully reported test statistics and degrees of freedom. When statistical tests are reported completely, data can be checked in the form of *p*-value reproducibility checks, which increase the transparency, validity and reusability of published research. Therefore, the full reporting of parameters associated with statistical tests is good practice, and should be adopted by researchers and enforced by journals.
+Most findings in the field of sport and exercise science (SES) are based on the results of null hypothesis significance testing (NHST). It is therefore important that NHST is performed correctly and that statistical results are reported accurately and completely. Long-standing critiques of *p*-value-only inference [@wasserstein_asa_2016; @wasserstein_schirm_lazar_2019; @amrhein_retire_2019; @halsey_reign_2019] and well-documented misinterpretations of *p*-values, confidence intervals, and statistical power [@greenland_misinterpretations_2016] underscore the need for transparent and complete reporting. There is also evidence from other fields, such as psychology, that some reported *p*-values do not match the test statistic and degrees of freedom from which they are derived [@bakker_misreporting_2011; @nuijten_prevalence_2016; @veldkamp_statistical_2014]. For instance, @nuijten_prevalence_2016 found that about half of screened published psychology articles using NHST contained at least one inconsistent *p*-value, a pattern that can now be examined at scale because content mining has made hundreds of thousands of reported statistical results available for automated checking [@hartgerink_688112_2016]. This could be sloppy reporting (e.g., *p* \< 0.03 when *p* = 0.305, or *p* = .000 when *p*-values can never be 0) but may also reflect an inconsistent claim where the reported *p*-value is significant (*p* \< .05) and the computed *p*-value was not (*p* \> 0.05), or vice-versa. Issues such as these may suggest human error, but can also indicate opportunistic misreporting of statistical results. It is impossible to evaluate the consistency of *p*-values in the absence of either raw data, or fully reported test statistics and degrees of freedom. When statistical tests are reported completely, data can be checked in the form of *p*-value reproducibility checks, which increase the transparency, validity and reusability of published research. Therefore, the full reporting of parameters associated with statistical tests is good practice, and should be adopted by researchers and enforced by journals.
 
-In addition to reporting critical test statistics for NHST, there are increased calls for the improved reporting of associated effect sizes and their uncertainty intervals [@cumming_new_statistics_2014; @lakens_calculating_2013]. In sport and exercise science specifically, concerns have been raised about both the routine omission of confidence intervals around effects [@knudson_confidence_2017] and the use of poorly justified default effect-size benchmarks [@caldwell_vigotsky_2020; @sainani_mbi_2018]. In addition to the value of the effect size for the practical interpretation of claims, effect sizes also facilitate meta-analyses and pre-study power calculations. However, the common reporting of only point estimates for effect sizes does not allow researchers to assess the uncertainty around these estimates, which requires confidence intervals. A further benefit of reporting confidence intervals around effect sizes is that they facilitate principled evaluation of replication results, not by assessing overlap between confidence intervals, but by allowing researchers to determine which effect sizes are compatible with the data and which can be rejected [@anderson_theres_2016; @lakens_improving_2022]. In particular, confidence intervals can be used to assess whether effect sizes that researchers consider theoretically or practically meaningful effect sizes can be ruled out, for example through equivalence testing, even when such tests were not originally conducted by the authors of an article [@lakens_equivalence_2017]. Therefore, beyond test statistics, degrees of freedom and absolute *p*-values, studies should also report effect sizes and their confidence intervals. Such recommendations are common in other fields, and are for instance part of the Journal Article Reporting Standards of the American Psychological Association [@appelbaum_journal_2018].
+In addition to reporting critical test statistics for NHST, there are increased calls for the improved reporting of associated effect sizes and their uncertainty intervals [@cumming_new_statistics_2014; @lakens_calculating_2013]. In sport and exercise science specifically, concerns have been raised about both the routine omission of confidence intervals around effects [@knudson_confidence_2017] and the use of poorly justified default effect-size benchmarks [@caldwell_vigotsky_2020; @sainani_mbi_2018]. In addition to the value of the effect size for the practical interpretation of claims, effect sizes also facilitate meta-analyses and pre-study power calculations. However, the common reporting of only point estimates for effect sizes does not allow researchers to assess the uncertainty around these estimates, which requires confidence intervals. A further benefit of reporting confidence intervals around effect sizes is that they facilitate principled evaluation of replication results, not by assessing overlap between confidence intervals, but by allowing researchers to determine which effect sizes are compatible with the data and which can be rejected [@anderson_theres_2016; @lakens_improving_2022]. In particular, confidence intervals can be used to assess whether effect sizes that researchers consider theoretically or practically meaningful can be ruled out, for example through equivalence testing, even when such tests were not originally conducted by the authors of an article [@lakens_equivalence_2017]. Therefore, beyond test statistics, degrees of freedom and absolute *p*-values, studies should also report effect sizes and their confidence intervals. Such recommendations are common in other fields, and are for instance part of the Journal Article Reporting Standards of the American Psychological Association [@appelbaum_journal_2018].
 
 Comprehensive and accurate reporting of all statistical information should be common practice in the scientific literature. However, this issue would be less problematic if researchers routinely shared raw data along with their methods, ideally in line with the FAIR (Findable, Accessible, Interoperable, Reusable) data principles [@wilkinson_fair_2016]. Providing raw data improves the reproducibility of reported claims and facilitates data re-use across a range of different contexts, including future meta-analyses, meta-syntheses (e.g., *z*-curve or individual data synthesis), model validation, and replication studies. Despite these benefits, data sharing remains rare in SES. For example, @twomey_nature_2021 found that only 0.67% of 300 articles [95% CI: 0.08 to 2.39%] reported a statement for data sharing or open data. Similarly, @borg_sharing_2020 reported that only 4.3% of 299 articles [95% CI: 2.3 to 7.3%] from quartile 1 SES journals shared their data and/or code. A case study in the Journal of Sports Sciences also reported that 0% of 174 articles shared their data [@mesquida2023]. Finally, colleagues in Exercise Medicine recently reported very poor access to previously collected data to validate a model for predicting gestational diabetes, even after directly contacting authors who had data-sharing statements in their publications [@germaine2024]. Therefore, poor data sharing presents a significant barrier to replication and reproducibility checks, in addition to limiting the validation of models of the future.
 
@@ -101,7 +102,7 @@ A sample of 350 studies was used for the purpose of this study. As stated in the
 
 **Journal and study selection protocol**
 
-The 350 studies were sampled from 10 journals ranked in quartile 1 according to www.scimagojr.com (as of 13th September, 2022). The list of journals can be found at <https://osf.io/d7wyc/>. The study selection protocol was based on the *Selection Protocol for Replication in Sports and Exercise Science [@murphy_proposal_2022]*. Only applied sport and exercise science studies in the sub-disciplines of physiology, sports performance, physical activity, injury prevention and psychology were considered. By applied sport and exercise science studies we refer to the study of changes in human performance in response to physical activity, exercise, and sport. Thus, we excluded reviews of any type (e.g., systematic, narrative, scoping and educational), meta-analysis, consensus statements, opinion pieces or commentaries, editorials, case studies, conference proceedings, study protocols, perspectives, and methodological reports. Moreover, only confirmatory studies were considered. By confirmatory we refer to any study that tests a hypothesis with an experimental or quasi-experimental design. A quasi-experimental design was defined as an empirical study used to estimate the causal impact of an independent variable on target population without randomization. Furthermore, only studies which contained hypothesis tests using *t*-test and *F*-tests were included. For *F*-tests, both main effects and interaction effects were considered. Statistical results from *post-hoc* tests were only considered if the corresponding prediction is stated in the hypothesis, otherwise we report the main effect or interaction only.
+The 350 studies were sampled from 10 journals ranked in quartile 1 according to www.scimagojr.com (as of 13th September, 2022). The study selection protocol was based on the *Selection Protocol for Replication in Sports and Exercise Science [@murphy_proposal_2022]*. Only applied sport and exercise science studies in the sub-disciplines of physiology, sports performance, physical activity, injury prevention and psychology were considered. By applied sport and exercise science studies we refer to the study of changes in human performance in response to physical activity, exercise, and sport. Thus, we excluded reviews of any type (e.g., systematic, narrative, scoping and educational), meta-analysis, consensus statements, opinion pieces or commentaries, editorials, case studies, conference proceedings, study protocols, perspectives, and methodological reports. Moreover, only confirmatory studies were considered. By confirmatory we refer to any study that tests a hypothesis with an experimental or quasi-experimental design. A quasi-experimental design was defined as an empirical study used to estimate the causal impact of an independent variable on target population without randomization. Furthermore, only studies which contained hypothesis tests using *t*-test and *F*-tests were included. For *F*-tests, both main effects and interaction effects were considered. Statistical results from *post-hoc* tests were only considered if the corresponding prediction is stated in the hypothesis, otherwise we report the main effect or interaction only.
 
 Although we attempted to apply the protocol described in @murphy_proposal_2022 to select studies, we deviated on two points from the original protocol. First, while the *Selection Protocol for Replication in Sports and Exercise* only selected studies that reported a statistically significant main effect, we considered both statistically significant and nonsignificant effects. Second, we also considered interaction effects as opposed to the original selection protocol.
 
@@ -123,8 +124,16 @@ agreement_3_coders <- calculate_kappa3_from_excel(
 
 agreement_3_coders[c(21, 22, 23), ]
 
-# Average Fleiss' kappa
-average_fleiss <- mean(agreement_3_coders[c(21, 22, 23, 20), 2])*100
+# Average Fleiss' kappa, expressed as a percentage of the 0-1 kappa scale.
+# Rows 21-23 are preregistration, public_data_repository and link_data_repository
+# -- the three variables described in the text, and the same three averaged for
+# Cohen's kappa below.
+average_fleiss <- round(mean(agreement_3_coders[c(21, 22, 23), 2])*100, 1)
+
+# Agreement on row 20 ("type_effect"), the classification of the key statistical
+# result. Reported separately in the text because the Aim 2 F-test / t-test
+# split depends on this coding.
+kappa_type_effect <- round(agreement_3_coders[20, 2]*100, 1)
 
 # Interrater agreement between 2 raters: Cohen's kappa
 agreement_2_coders <- calculate_kappa2_from_excel(
@@ -133,8 +142,8 @@ agreement_2_coders <- calculate_kappa2_from_excel(
 
 agreement_2_coders[c(21, 22, 23), ]
 
-# Average Cohen's kappa
-average_cohen <- mean(agreement_2_coders[c(21, 22, 23), 2])*100
+# Average Cohen's kappa, expressed as a percentage of the 0-1 kappa scale
+average_cohen <- round(mean(agreement_2_coders[c(21, 22, 23), 2])*100, 1)
 ```
 
 ```{r agreement}
@@ -163,7 +172,7 @@ perc_agreement2 <- perc_agreement2_df |>
   summarise(percentage_agreement2 = round((n()/nrow(perc_agreement2_df) * 100), 2))
 ```
 
-Prior to data collection, and in anticipation of difficulties to select the statistical result central to the primary hypothesis, we developed coding strategy over a 4-step process. First, the four authors (CM, JM, DL and JW) developed and discussed the coding form created by CM. Ambiguities in the coding form were discussed, and amendments were made. Second, three raters (CM, JM and JW) independently coded a randomly selected subset of 28 studies from the sample pool of studies (350) as a pilot study. Subsequently, raters’ responses were compared, and any disagreements were used to improve the clarity of coding form. Third, the same three raters (CM, JM and JW) independently coded a second random subset of 19 studies. Interrater agreement was assessed for the categorical variables preregistration (yes/no), availability of a link to an open data respository (yes/no) and whether the data repository link functional (yes/no) by calculating a pooled Fleiss’ Kappa estimate for each coding category across the 47 studies coded in the first two rounds of coding. The mean Fleiss' kappa across these three categorical responses was `r average_fleiss[1]`, indicating substantial agreement. The second round of coding was also used to discuss disagreements. The remaining 303 studies were double coded whereby both JM and JW each coded \~176 studies and CM coded the full sample of studies (350). Interrater agreement for the categorical variables in this final round was assessed using a pooled Cohen’s Kappa estimate, which was `r average_cohen[1]`, indicating almost perfect agreement. For the extracted statistical result quotes, agreement was quantified as the percentage of studies for which coders identified the identical statistical result. Exact agreement among the three raters was `r perc_agreement3[[1]]`, and exact agreement between the two two coders was `r perc_agreement2[[1]]`. After termination of data collection, any discrepancies in coding decisions were resolved through discussion between the two pairs of raters and can be found at https://osf.io/3juyq/. DL provided guidance when discrepancies arose and agreement between two raters could not be reached.
+Prior to data collection, and in anticipation of difficulties to select the statistical result central to the primary hypothesis, we developed coding strategy over a 4-step process. First, the four authors (CM, JM, DL and JW) developed and discussed the coding form created by CM. Ambiguities in the coding form were discussed, and amendments were made. Second, three raters (CM, JM and JW) independently coded a randomly selected subset of 28 studies from the sample pool of studies (350) as a pilot study. Subsequently, raters’ responses were compared, and any disagreements were used to improve the clarity of coding form. Third, the same three raters (CM, JM and JW) independently coded a second random subset of 19 studies. Interrater agreement was assessed for the categorical variables preregistration (yes/no), availability of a link to an open data respository (yes/no) and whether the data repository link functional (yes/no) by calculating a pooled Fleiss’ Kappa estimate for each coding category across the 47 studies coded in the first two rounds of coding. The mean Fleiss' kappa across these three categorical responses was `r average_fleiss[1]`%, indicating almost perfect agreement. Agreement on the classification of the key statistical result itself (main effect, interaction effect, difference of means, or unclear) was more modest (Fleiss' kappa `r kappa_type_effect`%), reflecting the difficulty of identifying the focal test in studies with vague hypotheses. The second round of coding was also used to discuss disagreements. The remaining 303 studies were double coded whereby both JM and JW each coded \~176 studies and CM coded the full sample of studies (350). Interrater agreement for the categorical variables in this final round was assessed using a pooled Cohen’s Kappa estimate, which was `r average_cohen[1]`%, indicating almost perfect agreement. For the extracted statistical result quotes, agreement was quantified as the percentage of studies for which coders identified the identical statistical result. Exact agreement among the three raters was `r perc_agreement3[[1]]`%, and exact agreement between the two coders was `r perc_agreement2[[1]]`%. After termination of data collection, any discrepancies in coding decisions were resolved through discussion between the two pairs of raters and can be found at https://osf.io/3juyq/. DL provided guidance when discrepancies arose and agreement between two raters could not be reached.
 
 **Procedures and data extraction**
 
@@ -212,7 +221,7 @@ flextable(checklist) |>
 
 *\*Note that this coding strategy deviates slightly from the pre-registration in that we no longer code the key statistical test type (e.g. paired t-test, 1-way ANOVA, etc.) as specified in item 4 of the preregistration. This decision was made because this information did not inform our analysis and we already include the number of* t*- and* F*-tests.*
 
-**1.1. Statistical analysis**
+**Statistical analysis**
 
 All research data and analysis syntax can be found at https://osf.io/3juyq/.
 
@@ -228,9 +237,9 @@ We compared the reported and recalculated *p*-value and report the result as:
 
 \- ***Incompatible*****:** if the reported *p*-value was equal to or smaller than the type I error rate (typically 0.05) but the recomputed *p*-value was larger than the type I error rate, or vice versa. As this changed the statistical conclusion, the reported *p*-value is considered incompatible with the reproduced *p*-value. For instance, if the recomputed *p*-value was 0.058 but it had been reported as *p* = 0.05 (or *p* \< 0.05) and the study claimed that statistical significance had been reached, we would consider it as *incompatible*.
 
-All proportions are presented with 95% Wilson confidence intervals.
+All proportions for Aim 1 are presented with 95% Wilson confidence intervals.
 
-**Retrospective Metacheck analysis** As described in the Introduction, we retrospectively applied *Metacheck* (version 0.0.0.9068; [@metacheck]) to conduct a more comprehensive assessment of reporting practices across the same 350 studies. PDF-to-XML conversion was performed via GROBID using a hosted GROBID instance (https://thesanogoeffect-grobid-papercheck.hf.space). The OSF repository contains the cached XML outputs as an `.Rds` object so that downstream *Metacheck* steps can be reproduced without re-running GROBID. Two PDF files could not be converted to XML, leaving 348 articles for automated analysis. Three modules were applied: (1) stat_p_exact, which extracted all *p*-values from the results sections and classified them as exact (e.g., *p* = .034) or imprecise (e.g., *p* \< .05); (2) stat_effect_size, which detected whether standardised effect sizes were reported alongside *t*- and *F*-tests; and (3) stat_check, which recomputed *p*-values from all reported *t*- and *F*-statistics with sufficient information, analogous to the statcheck procedure applied to the manually coded subset. We additionally searched article full-texts for the phrase "95% CI" or "95% confidence interval" to estimate the prevalence of confidence interval reporting. This expanded analysis was not pre-registered; it was added retrospectively to capitalise on improved measurement coverage, and is reported transparently alongside the pre-registered analysis.
+**Retrospective Metacheck analysis** As described in the Introduction, we retrospectively applied *Metacheck* (version 0.1.0; [@metacheck]) to conduct a more comprehensive assessment of reporting practices across the same 350 studies. PDF-to-XML conversion was performed via GROBID using a hosted GROBID instance (https://thesanogoeffect-grobid-papercheck.hf.space). The repository contains the cached outputs, but the full `.Rds` file has been redacted to prevent copyright infringements. Two PDF files could not be converted to XML, leaving 348 articles for automated analysis. Three modules were applied: (1) stat_p_exact, which extracted all *p*-values from the results sections and classified them as exact (e.g., *p* = .034) or imprecise (e.g., *p* \< .05); (2) stat_effect_size, which detected whether standardised effect sizes were reported alongside *t*- and *F*-tests; and (3) stat_check, which recomputed *p*-values from all reported *t*- and *F*-statistics with sufficient information, analogous to the statcheck procedure applied to the manually coded subset. For the effect sizes that were reported, we additionally recorded whether *stat_effect_size* was able to check the reported value against the test statistic and its degrees of freedom, which is not possible for every effect-size metric or study design. We additionally searched article full-texts for the phrase "95% CI" or "95% confidence interval" to estimate the prevalence of confidence interval reporting. This expanded analysis was not pre-registered; it was added retrospectively to capitalise on improved measurement coverage, and is reported transparently alongside the pre-registered analysis.
 
 # Software
 
@@ -238,7 +247,7 @@ All proportions are presented with 95% Wilson confidence intervals.
 
 ```
 
-All analyses were conducted in R (`r R.version.string`) using a suite of packages. Data were imported using *readr* [@R-readr] and *readxl* [@R-readxl], while data wrangling and transformation were performed with *dplyr* [@R-dplyr], *tidyr* [@R-tidyr], *stringr* [@R-stringr], *scales* [@R-scales] and *tibble* [@R-tibble]. The *here* package [@R-here] was used to manage file paths. Statistical results reported in the literature were screened using *statcheck* [@R-statcheck] and *Metacheck* [@metacheck]. Tables were generated with *flextable* [@R-flextable], and *knitr* [@R-knitr] supported the integration of analyses into the report. The manuscript was written in *Quarto* [@quarto].
+All analyses were conducted in R (`r R.version.string`) [@R-studio] using a suite of packages. Data were imported using *readr* [@R-readr] and *readxl* [@R-readxl], while data wrangling and transformation were performed with *dplyr* [@R-dplyr], *tidyr* [@R-tidyr], *stringr* [@R-stringr], *scales* [@R-scales] and *tibble* [@R-tibble]. The *here* package [@R-here] was used to manage file paths. Statistical results reported in the literature were screened using *statcheck* [@R-statcheck] and *Metacheck* [@metacheck]. Tables were generated with *flextable* [@R-flextable], and *knitr* [@R-knitr] supported the integration of analyses into the report. The manuscript was written in *Quarto* [@quarto].
 
 # Results
 
@@ -246,19 +255,18 @@ All analyses were conducted in R (`r R.version.string`) using a suite of package
 
 ### Aim 1: Reporting practices for the primary effect of interest
 
-Whilst 94.6% of studies (95% CI 91.7–96.5%, *n* = 331/350) reported a *p*-value for the main effect of interest, only 39.7% (34.7–44.9%, *n* = 139/350) reported the test statistic (*F* or *t*), 28.9% (24.4–33.8%, *n* = 101/350) reported the degrees of freedom, 53.7% (48.5–58.9%, *n* = 188/350) reported an estimate of effect size, and only 7.7% (5.4–11.0%, *n* = 27/350) reported a confidence interval around the effect size. Of the effect sizes reported, 4.0% (2.4–6.6%, *n* = 14) were both standardised and unstandardised, 1.7% (0.8–3.7%, *n* = 6) were only unstandardised, and 48.0% (42.8–53.2%, *n* = 168) were standardised. The striking discrepancy between effect-size reporting (53.7%) and effect-size CI reporting (7.7%) implies that, in the great majority of cases where a magnitude estimate is given, no quantification of its uncertainty accompanies it (@tbl-summary-apa).
-
 ```{r}
-#| label: tbl-summary-apa
-#| tbl-cap: "Frequencies of observed reporting practices for the primary statistical result, with Wilson 95% confidence intervals (*N* = 350 studies)."
+#| label: aim1-calc
+#| output: FALSE
 
 # 1. Read data
 Coded_papers <- read.csv(here("data", "DATA reporting_practices - Coded Data.csv"), stringsAsFactors = FALSE)
+n_total <- nrow(Coded_papers)
 
 # 2. Wilson 95% CI helper (no external dependency beyond base R)
 wilson_ci <- function(x, n, conf.level = 0.95) {
   if (n == 0) return(c(NA_real_, NA_real_, NA_real_))
-  z <- stats::qnorm(1 - (1 - conf.level) / 2)
+  z <- qnorm(1 - (1 - conf.level) / 2)
   p <- x / n
   denom  <- 1 + z^2 / n
   centre <- (p + z^2 / (2 * n)) / denom
@@ -284,6 +292,21 @@ fmt_pct_ci <- function(x, n) {
   }, character(1))
 }
 
+# Formats a count as "X.X% (95% CI X.X-X.X%, n = k/N)" for inline prose use.
+fmt_stat <- function(x, n = n_total) {
+  ci <- wilson_ci(x, n)
+  sprintf("%.1f%% (95%% CI %.1f–%.1f%%, *n* = %d/%d)",
+          100 * ci[["estimate"]], 100 * ci[["lower"]], 100 * ci[["upper"]], x, n)
+}
+# Same as fmt_stat() but without the "95% CI" label or the "/N" denominator,
+# for use when the denominator has already been stated in the sentence.
+fmt_stat_of <- function(x, n = n_total) {
+  ci <- wilson_ci(x, n)
+  sprintf("%.1f%% (%.1f–%.1f%%, *n* = %d)",
+          100 * ci[["estimate"]], 100 * ci[["lower"]], 100 * ci[["upper"]], x)
+}
+pct_of <- function(x, n = n_total) sprintf("%.1f%%", 100 * x / n)
+
 # 3. Simple YES/NO variables
 yes_no_cols <- c("Any_stats.", "p.values.", "test_stats.", "Df.")
 summary_yesno <- data.frame(Variable = yes_no_cols) %>%
@@ -293,35 +316,35 @@ summary_yesno <- data.frame(Variable = yes_no_cols) %>%
     Total  = sum(!is.na(Coded_papers[[Variable]])),
     Result = fmt_pct_ci(N, Total)
   ) %>%
-  ungroup() %>%
-  select(Variable, Result)
+  ungroup()
 
 # 4. Effect-size categories (denominator = full sample so subcategories sum to 100%)
-n_total <- nrow(Coded_papers)
 es_levels <- c("standardized", "unstandardized", "both", "not reported")
-summary_ES <- Coded_papers %>%
+es_counts <- Coded_papers %>%
   mutate(`ES.` = tolower(trimws(as.character(`ES.`)))) %>%
   mutate(`ES.` = if_else(`ES.` %in% es_levels | is.na(`ES.`),
                          `ES.`, `ES.`)) %>%
-  count(Response = `ES.`) %>%
+  count(Response = `ES.`)
+summary_ES <- es_counts %>%
   mutate(
     Result   = fmt_pct_ci(n, n_total),
     Variable = paste0("  ", ifelse(is.na(Response), "not reported", Response))
   ) %>%
   select(Variable, Result)
-summary_ES <- bind_rows(tibble::tibble(Variable = "Effect sizes (denominator = 350)", Result = ""),
+summary_ES <- bind_rows(tibble(Variable = "Effect sizes (denominator = 350)", Result = ""),
                         summary_ES)
 
 # 5. CI of effect size
-summary_CI <- Coded_papers %>%
+ci_counts <- Coded_papers %>%
   mutate(`CI_ES.` = tolower(trimws(as.character(`CI_ES.`)))) %>%
-  count(Response = `CI_ES.`) %>%
+  count(Response = `CI_ES.`)
+summary_CI <- ci_counts %>%
   mutate(
     Result   = fmt_pct_ci(n, n_total),
     Variable = paste0("  ", ifelse(is.na(Response), "not reported", Response))
   ) %>%
   select(Variable, Result)
-summary_CI <- bind_rows(tibble::tibble(Variable = "Effect-size CIs (denominator = 350)", Result = ""),
+summary_CI <- bind_rows(tibble(Variable = "Effect-size CIs (denominator = 350)", Result = ""),
                         summary_CI)
 
 # 6. Preregistration (item 8 of the coding strategy — previously coded but not reported)
@@ -329,12 +352,12 @@ prereg_col <- intersect(c("preregistration", "Preregistration", "preregistered")
 if (length(prereg_col) >= 1) {
   preg <- tolower(trimws(as.character(Coded_papers[[prereg_col[1]]])))
   n_preg <- sum(preg %in% c("yes", "y", "1", "true"), na.rm = TRUE)
-  summary_PREG <- tibble::tibble(
+  summary_PREG <- tibble(
     Variable = "Preregistration reported",
     Result   = fmt_pct_ci(n_preg, n_total)
   )
 } else {
-  summary_PREG <- tibble::tibble(Variable = "Preregistration reported", Result = "not coded")
+  summary_PREG <- tibble(Variable = "Preregistration reported", Result = "not coded")
 }
 
 # 7. Data sharing
@@ -342,16 +365,17 @@ ds_col <- intersect(c("raw_data", "data_sharing", "shared_data"), names(Coded_pa
 if (length(ds_col) >= 1) {
   ds <- tolower(trimws(as.character(Coded_papers[[ds_col[1]]])))
   n_ds <- sum(ds %in% c("yes", "y", "1", "true"), na.rm = TRUE)
-  summary_DS <- tibble::tibble(
+  summary_DS <- tibble(
     Variable = "Raw data shared (working link)",
     Result   = fmt_pct_ci(n_ds, n_total)
   )
 } else {
-  summary_DS <- tibble::tibble(Variable = "Raw data shared (working link)", Result = "not coded")
+  summary_DS <- tibble(Variable = "Raw data shared (working link)", Result = "not coded")
 }
 
-# 8. Combine
-summary_APA <- bind_rows(summary_yesno, summary_ES, summary_CI, summary_PREG, summary_DS)
+# 8. Combine (table only needs Variable/Result; N/Total from summary_yesno are
+# kept above for the inline-reported Aim 1 statistics below)
+summary_APA <- bind_rows(select(summary_yesno, Variable, Result), summary_ES, summary_CI, summary_PREG, summary_DS)
 
 # 9. Clean labels for top-level rows
 summary_APA$Variable <- recode(summary_APA$Variable,
@@ -361,7 +385,25 @@ summary_APA$Variable <- recode(summary_APA$Variable,
   "Df."         = "Degrees of freedom reported"
 )
 
-# 10. Display table
+# Counts referenced by the Aim 1 prose immediately below, and by Aim 3
+# further down (n_total, n_ds). Sourced from the same summary objects used
+# to build @tbl-summary-apa so the prose cannot drift from the table.
+n_p    <- summary_yesno$N[summary_yesno$Variable == "p.values."]
+n_test <- summary_yesno$N[summary_yesno$Variable == "test_stats."]
+n_df   <- summary_yesno$N[summary_yesno$Variable == "Df."]
+n_es_std   <- es_counts$n[es_counts$Response == "standardised"]
+n_es_unstd <- es_counts$n[es_counts$Response == "unstandardised"]
+n_es_both  <- es_counts$n[es_counts$Response == "both"]
+n_es_any   <- n_es_std + n_es_unstd + n_es_both
+n_ci_es    <- sum(ci_counts$n[ci_counts$Response %in% c("yes", "yes, only for the unstandardised")])
+```
+
+Whilst `r fmt_stat(n_p)` of studies reported a *p*-value for the main effect of interest, only `r fmt_stat(n_test)` reported the test statistic (*F* or *t*), `r fmt_stat(n_df)` reported the degrees of freedom, `r fmt_stat(n_es_any)` reported an estimate of effect size, and only `r fmt_stat(n_ci_es)` reported a confidence interval around the effect size. Of the effect sizes reported, `r fmt_stat_of(n_es_both)` were both standardised and unstandardised, `r fmt_stat_of(n_es_unstd)` were only unstandardised, and `r fmt_stat_of(n_es_std)` were standardised. The striking discrepancy between effect-size reporting (`r pct_of(n_es_any)`) and effect-size CI reporting (`r pct_of(n_ci_es)`) implies that, in the great majority of cases where a magnitude estimate is given, no quantification of its uncertainty accompanies it (@tbl-summary-apa).
+
+```{r}
+#| label: tbl-summary-apa
+#| tbl-cap: "Frequencies of observed reporting practices for the primary statistical result, with Wilson 95% confidence intervals (*N* = 350 studies)."
+
 flextable(summary_APA) %>%
   set_header_labels(Variable = "Coded variable", Result = "n/N (% [95% CI])") %>%
   autofit()
@@ -396,7 +438,7 @@ if (length(candidate_idx) == 0L) {
     str_squish()
 
   # run statcheck on the candidate strings
-  res <- statcheck::statcheck(texts = texts_to_check)
+  res <- statcheck(texts = texts_to_check)
 
   # convert to tibble and map back to original rows
   if (is.null(res) || nrow(as.data.frame(res)) == 0L) {
@@ -427,7 +469,7 @@ if (length(candidate_idx2) == 0L) {
     str_replace_all(regex("p\\s*([<>=])\\s*(\\.?\\d+)"), "p \\1 \\2") |>
     str_squish()
 
-  res_f <- statcheck::statcheck(texts = texts_to_check)
+  res_f <- statcheck(texts = texts_to_check)
 
   if (is.null(res_f) || nrow(as.data.frame(res_f)) == 0L) {
     manual_F_statcheck <- tibble()
@@ -455,37 +497,99 @@ list(t_test = manual_res_t, F_test = manual_res_F)
 
 ### Aim 2: *p*-value reproducibility in the manually coded subset
 
-For 7 of the 350 studies we could not determine the main statistical test, and these were excluded from the reproducibility analysis. 66.3% (95% CI 61.2–71.0%, *n* = 232/350) reported an *F*-test as the main effect of interest (interaction effects *n* = 119, main effects *n* = 113). We were able to determine the degrees of freedom (DF) for 31 of these studies that had not reported them, and combined with studies that had reported DF we generated a *statcheck* report for 51.3% (44.9–57.7%, *n* = 119/232) of the *F*-tests. The reproducibility classifications for these 119 *F*-tests are shown in @tbl-frep.
+```{r}
+#| label: aim2-calc
+#| output: FALSE
 
-31.7% (27.1–36.8%, *n* = 111/350) of studies reported a difference of means as the main effect of interest. We were able to determine the missing DF for 4 of these studies, and combined with 8 studies that had already reported DF we generated a *statcheck* report for 10.8% (6.3–17.9%, *n* = 12/111) of the *t*-test studies. All 12 made the correct statistical decision (no decision errors). Of these 12, 1 (8.3%, 1.5–35.4%) was incorrectly rounded; the remaining 11 were either directly reproduced or not-reproduced-but-compatible. One additional study reported a Wilcoxon signed-ranks test, which we were also able to reproduce.
+# Main-effect test-type classification (coding item 2)
+effect_type <- tolower(trimws(Coded_papers$effect_of_interest))
+n_unclear <- sum(effect_type == "unclear", na.rm = TRUE)
+
+n_f_inter <- sum(effect_type == "interaction effect", na.rm = TRUE)
+n_f_main  <- sum(effect_type == "main effect", na.rm = TRUE)
+n_f_total <- n_f_inter + n_f_main
+
+n_t_total <- sum(effect_type == "difference of means", na.rm = TRUE)
+
+# F-tests: how many of the n_f_total already had DF reported (coding item 4a = Yes)?
+f_df_reported_ids <- Coded_papers$ID[effect_type %in% c("main effect", "interaction effect") &
+                                        Coded_papers$Df. == "Yes"]
+n_f_statcheck   <- nrow(ANOVA_rep)                               # F-tests with a statcheck report
+n_f_df_inferred <- sum(!(ANOVA_rep$ID %in% f_df_reported_ids))   # ...of which DF had to be inferred
+
+# t-tests: the Wilcoxon signed-ranks test is reported separately in the prose
+# and excluded from the "checkable t-test" counts below.
+is_wilcoxon   <- str_detect(tolower(T_test_rep$`Within or Between`), "wilcoxon")
+n_wilcoxon    <- sum(is_wilcoxon)
+n_t_statcheck <- sum(!is_wilcoxon)   # checkable t-tests (excl. Wilcoxon)
+n_t_checkable <- nrow(T_test_rep)    # = n_t_statcheck + n_wilcoxon = n_t_df_inferred + n_t_df_reported
+
+t_df_reported_ids <- Coded_papers$ID[effect_type == "difference of means" &
+                                        Coded_papers$Df. == "Yes"]
+n_t_df_inferred <- sum(!(T_test_rep$ID %in% t_df_reported_ids))  # across all rows incl. Wilcoxon
+n_t_df_reported <- sum(T_test_rep$ID[!is_wilcoxon] %in% t_df_reported_ids)  # among the checkable t-tests only
+
+t_agreement          <- T_test_rep$`Agreement?`[!is_wilcoxon]
+n_t_rounded          <- sum(t_agreement == "Incorrectly rounded", na.rm = TRUE)
+n_t_decision_error   <- sum(t_agreement == "Incompatible", na.rm = TRUE)
+n_t_other_reproduced <- n_t_statcheck - n_t_rounded - n_t_decision_error
+
+# Small helpers for the CI formats used specifically in Aim 2 (no leading
+# "95% CI" label, since it was already introduced earlier in Results Part 1).
+fmt_stat_nolabel <- function(x, n) {
+  ci <- wilson_ci(x, n)
+  sprintf("%.1f%% (%.1f–%.1f%%, *n* = %d/%d)",
+          100 * ci[["estimate"]], 100 * ci[["lower"]], 100 * ci[["upper"]], x, n)
+}
+fmt_n_first <- function(x, n) {
+  ci <- wilson_ci(x, n)
+  sprintf("%d (%.1f%%, %.1f–%.1f%%)",
+          x, 100 * ci[["estimate"]], 100 * ci[["lower"]], 100 * ci[["upper"]])
+}
+
+# F-test classification counts for @tbl-frep, computed from ANOVA_rep rather
+# than hard-coded (confirmed against the source data on 2026-09-22; ANOVA_rep
+# is the authoritative record).
+frep_by_class <- ANOVA_rep %>% count(`Agreement?`)
+frep_n <- setNames(frep_by_class$n, frep_by_class$`Agreement?`)
+
+# F-tests that did not reproduce exactly, used in the Discussion to compare the
+# manually coded subset with the automated sweep.
+n_f_nonexact <- n_f_statcheck - frep_n[["Reproduced"]]
+```
+
+For `r n_unclear` of the `r n_total` studies we could not determine the main statistical test, and these were excluded from the reproducibility analysis. `r fmt_stat(n_f_total)` reported an *F*-test as the main effect of interest (interaction effects *n* = `r n_f_inter`, main effects *n* = `r n_f_main`). We were able to determine the degrees of freedom (DF) for `r n_f_df_inferred` of these studies that had not reported them, and combined with studies that had reported DF we generated a *statcheck* report for `r fmt_stat_nolabel(n_f_statcheck, n_f_total)` of the *F*-tests. The reproducibility classifications for these `r n_f_statcheck` *F*-tests are shown in @tbl-frep.
+
+`r fmt_stat_nolabel(n_t_total, n_total)` of studies reported a difference of means as the main effect of interest. We were able to determine the missing DF for `r n_t_df_inferred` of these studies, giving `r n_t_checkable` checkable tests when combined with the `r n_t_df_reported` that had already reported DF: `r n_t_statcheck` *t*-tests, equivalent to `r fmt_stat_nolabel(n_t_statcheck, n_t_total)` of the *t*-test studies, plus `r n_wilcoxon` Wilcoxon signed-ranks test. All `r n_t_statcheck` *t*-tests made the correct statistical decision (`r n_t_decision_error` decision errors). Of these `r n_t_statcheck`, `r fmt_n_first(n_t_rounded, n_t_statcheck)` was incorrectly rounded; the remaining `r n_t_other_reproduced` were either directly reproduced or not-reproduced-but-compatible. The Wilcoxon signed-ranks test was also reproduced.
 
 ```{r}
 #| label: tbl-frep
 #| tbl-cap: "Reproducibility classification for the 119 *F*-tests in the manually coded subset (Wilson 95% CIs)."
 
-frep <- tibble::tibble(
+frep <- tibble(
   Classification = c("Reproduced", "Not reproduced but compatible",
                      "Incorrectly rounded", "Incompatible (decision error)", "Total"),
-  n              = c(79, 32, 7, 1, 119)
+  n              = c(frep_n[["Reproduced"]], frep_n[["Not reproducible but compatible"]],
+                     frep_n[["Incorrectly rounded"]], frep_n[["Incompatible"]], n_f_statcheck)
 )
 frep <- frep %>%
   mutate(
-    `%`          = sprintf("%.1f", 100 * n / 119),
+    `%`          = sprintf("%.1f", 100 * n / n_f_statcheck),
     `95% CI`     = vapply(n, function(x) {
-      if (x == 119) return("—")
-      ci <- wilson_ci(x, 119)
+      if (x == n_f_statcheck) return("—")
+      ci <- wilson_ci(x, n_f_statcheck)
       sprintf("[%.1f, %.1f]", 100 * ci["lower"], 100 * ci["upper"])
     }, character(1))
   )
-flextable::flextable(frep) %>%
-  flextable::set_header_labels(Classification = "Reproducibility classification",
+flextable(frep) %>%
+  set_header_labels(Classification = "Reproducibility classification",
                                n = "n", `%` = "%", `95% CI` = "95% CI") %>%
-  flextable::autofit()
+  autofit()
 ```
 
 ### Aim 3: Data sharing
 
-1.7% (95% CI 0.8–3.7%, *n* = 6/350) of studies included a working data-sharing link. We confirmed that all six links resolved to accessible data files. Because preregistration was also a planned coding item (@tbl-checklist; item 8), we additionally report it here for completeness (see @tbl-summary-apa); this addresses an originally pre-registered aim and we therefore retain it despite its tangential relationship to the central reproducibility narrative.
+`r fmt_stat(n_ds)` of studies included a working data-sharing link. We confirmed that all `r n_ds` links resolved to accessible data files. Because preregistration was also a planned coding item (@tbl-checklist; item 8), we additionally report it here for completeness (see @tbl-summary-apa); this addresses an originally pre-registered aim and we therefore retain it despite its tangential relationship to the central reproducibility narrative.
 
 ## Results part 2 - Automated whole-corpus analysis (exploratory)
 
@@ -509,7 +613,7 @@ convert(
   crossref_lookup = FALSE
 )
 
-#Three PDFs could not be converted to XML format (350 − 348), resulting in a total of 348 studies in XML format.
+#Two PDFs could not be converted to XML format, resulting in a total of 348 studies in XML format.
 
 ## Step 2- Read in XML files
 
@@ -524,36 +628,94 @@ path_files <- list.files(
 articles <- read(path_files)
 
 ## Step 3- Store XML files as an RDS object for efficiency
-saveRDS(articles, "articles_xml.Rds")
+saveRDS(articles, here("files", "articles_xml.Rds"))
+
+## Step 4- Cache the module outputs that the manuscript actually reads.
+# The XML object holds the full parsed text of copyrighted articles and is
+# therefore not shared. These tables keep only the columns needed to reproduce
+# the reported numbers, with all verbatim article text dropped.
+
+articles_files <- readRDS(here("files", "articles_xml.Rds"))
+
+readr::write_csv(
+  tibble(n_papers = length(articles_files)),
+  here("files", "cached_corpus_info.csv")
+)
+
+readr::write_csv(
+  module_run(articles_files, "stat_p_exact")$table |>
+    select(paper_id, p_comp, p_value),
+  here("files", "cached_stat_p_exact.csv")
+)
+
+readr::write_csv(
+  module_run(articles_files, "stat_effect_size")$table |>
+    mutate(
+      has_es  = !is.na(es),
+      verdict = ifelse(test == "t-test", d_coherence, eta_coherence),
+      note    = ifelse(test == "t-test", d_coherence_note, eta_coherence_note)
+    ) |>
+    select(paper_id, test, has_es, verdict, note),
+  here("files", "cached_stat_effect_size.csv")
+)
+
+readr::write_csv(
+  module_run(articles_files, "stat_check")$table |>
+    select(paper_id, test_type, reported_p, computed_p, error, decision_error),
+  here("files", "cached_stat_check.csv")
+)
+
+readr::write_csv(
+  search_text(articles_files,
+              pattern = "(?i)95%\\s*(CI|confidence\\s*interval)",
+              return = "sentence") |>
+    select(paper_id),
+  here("files", "cached_ci_mentions.csv")
+)
 ```
 
 ```{r}
 #| output: FALSE
-## Run metacheck modules for reporting practices
-articles_files <- readRDS(here("files", "articles_xml.Rds"))
+## Cached metacheck module outputs.
+#
+# The GROBID-converted XML object (articles_xml.Rds) is not redistributed: it
+# contains the full parsed text of copyrighted articles. These cached tables are
+# the module outputs derived from it, reduced to the columns needed to reproduce
+# the numbers reported below, with all verbatim article text removed. The code
+# that produced them is the non-evaluated chunk above.
 
-### `stat_p_exact` returns all p-values from the results section.
-exact <- module_run(articles_files, "stat_p_exact")
+# Column types are pinned rather than guessed. p_value is matched with a regex
+# below, so it must stay character; readr would otherwise read it as a double
+# and the comparison would depend on how R formats small numbers.
+n_papers  <- read_csv(here("files", "cached_corpus_info.csv"),
+                      col_types = cols(n_papers = col_integer()))$n_papers
+exact_tbl <- read_csv(here("files", "cached_stat_p_exact.csv"),
+                      col_types = cols(.default = col_character()))
+es_tbl    <- read_csv(here("files", "cached_stat_effect_size.csv"),
+                      col_types = cols(.default = col_character(),
+                                       has_es = col_logical()))
+ci_hits   <- read_csv(here("files", "cached_ci_mentions.csv"),
+                      col_types = cols(.default = col_character()))
 
 # All downstream "narrative" numbers are computed here so they cannot drift
 # from the prose. Do not edit the prose with hard-coded counts — let the
 # inline R values do the work.
 
-n_pvals_total <- nrow(exact$table)
+n_pvals_total <- nrow(exact_tbl)
 
-n_pvals_imprecise_ns <- exact$table |>
-  dplyr::filter(p_comp %in% c(">", "≥")) |>
+n_pvals_imprecise_ns <- exact_tbl |>
+  filter(p_comp %in% c(">", "≥")) |>
   nrow()
 
-n_pvals_imprecise_sig <- exact$table |>
-  dplyr::filter(p_comp %in% c("<", "≤")) |>
+n_pvals_imprecise_sig <- exact_tbl |>
+  filter(p_comp %in% c("<", "≤")) |>
   nrow()
 
 # imprecise significant p-values that are NOT p<.001 / p≤.001
-decision_error_count <- exact$table |>
-  dplyr::filter(p_comp %in% c("<", "≤"),
-                !stringr::str_detect(p_value, stringr::regex("0\\.001|\\.001", ignore_case = TRUE))) |>
-  dplyr::count()
+decision_error_count <- exact_tbl |>
+  filter(p_comp %in% c("<", "≤"),
+                !str_detect(p_value, regex("0\\.001|\\.001", ignore_case = TRUE))) |>
+  count()
 
 ### `stat_effect_size` module
 
@@ -561,20 +723,15 @@ decision_error_count <- exact$table |>
 
 #Returns a table with counts of t-tests and F-tests that did not report a standardized effect size and those that did report one.
 
-es <- module_run(
-  articles_files,
-  "stat_effect_size"
-)
-
-es_summary <- if (is.null(es) || is.null(es$table) || nrow(es$table) == 0L) {
+es_summary <- if (is.null(es_tbl) || nrow(es_tbl) == 0L) {
   tibble()
 } else {
-  es$table %>%
-    mutate(report_es = !is.na(es)) %>%
+  es_tbl %>%
+    mutate(report_es = has_es) %>%
     filter(test %in% c("t-test", "F-test")) %>%
     group_by(test, report_es) %>%
     summarise(n = n(), .groups = "drop") %>%
-    tidyr::pivot_wider(
+    pivot_wider(
       names_from = report_es,
       values_from = n,
       values_fill = 0
@@ -588,31 +745,41 @@ es_summary <- if (is.null(es) || is.null(es$table) || nrow(es$table) == 0L) {
 
 es_summary
 
+# Coherence of the effect sizes that WERE reported: could the reported value be
+# checked against the test statistic and its degrees of freedom at all? The
+# module returns "indeterminate" when it cannot recover a comparison value
+# (e.g. eta-squared in a factorial design, or Welch's t with non-integer df).
+es_coh <- es_tbl %>%
+  filter(test %in% c("t-test", "F-test"), has_es)
+
+n_es_tests        <- nrow(es_coh)
+n_es_uncheckable  <- sum(es_coh$verdict == "indeterminate", na.rm = TRUE)
+n_es_metric_ambig <- sum(es_coh$verdict == "indeterminate" &
+                           str_detect(es_coh$note, "reconstructed|cannot determine"),
+                         na.rm = TRUE)
+
 #Search for articles that might have reported 95% CI or confidence intervals on the basis of the pattern "95% CI" or "95% confidence interval" (case-insensitive) in paper (commonly reported in the methods or results). Returns the sentences where this pattern was detected and how many papers reported 95% CI or confidence intervals. Again, this test is not too informative, as it does not allow us to determine the number of papers that reported 95% CI or confidence intervals but only if they used this terminology.
     
-ci_hits <- search_text(
-  articles_files,
-  pattern = "(?i)95%\\s*(CI|confidence\\s*interval)",
-  return = "sentence"
-)
-
 if (is.null(ci_hits) || nrow(ci_hits) == 0L) {
   n_sentences_ci <- 0L
   n_papers_reporting_ci <- 0L
 } else {
   n_sentences_ci <- nrow(ci_hits)
-  id_candidates <- c("file", "file_name", "filename", "article", "article_id", "id", "doc_id", "doc")
+  # metacheck 0.1.0 identifies papers with `paper_id`; the remaining names are
+  # fallbacks for older versions. Without paper_id first, this silently yields
+  # NA and the CI-reporting sentence below renders as "NA of 348 papers".
+  id_candidates <- c("paper_id", "file", "file_name", "filename", "article", "article_id", "id", "doc_id", "doc")
   id_col <- intersect(id_candidates, names(ci_hits))
   if (length(id_col) >= 1) {
-    n_papers_reporting_ci <- ci_hits %>% dplyr::pull(id_col[1]) %>% n_distinct()
+    n_papers_reporting_ci <- ci_hits %>% pull(id_col[1]) %>% n_distinct()
   } else {
     n_papers_reporting_ci <- NA_integer_
   }
 }
 
-total_papers <- length(articles_files)
+total_papers <- n_papers
 
-result_95ci <- tibble::tibble(
+result_95ci <- tibble(
   n_sentences = n_sentences_ci,
   n_papers_reporting = n_papers_reporting_ci,
   total_papers = total_papers,
@@ -622,26 +789,36 @@ result_95ci <- tibble::tibble(
 result_95ci
 ```
 
-The Metacheck sweep covered `r length(articles_files)` of the 350 articles (`r 350-length(articles_files)` could not be converted from PDF to XML using GROBID). Note that these automated analyses also include the tests as were coded manually in Part 1.
+The Metacheck sweep covered `r n_papers` of the 350 articles (`r 350 - n_papers` could not be converted from PDF to XML using GROBID). Note that these automated analyses also include the tests as were coded manually in Part 1.
 
-We extracted `r n_pvals_total` *p*-values from the results sections of the `r length(articles_files)` papers retained for the automated analysis. Of these, `r n_pvals_imprecise_ns` non-significant *p*-values were reported imprecisely (as *p* \> .05 or *p* ≥ .05) and `r n_pvals_imprecise_sig` significant *p*-values were reported imprecisely (as *p* \< .05 or *p* ≤ .05). We excluded "*p* \< .001" and "*p* ≤ .001", which although imprecise, are reported in line with reporting guidelines. We thus conclude the manuscripts contained `r decision_error_count$n` imprecise significant *p*-values that could in principle have been reported exactly.
+We extracted `r n_pvals_total` *p*-values from the results sections of the `r n_papers` papers retained for the automated analysis. Of these, `r n_pvals_imprecise_ns` non-significant *p*-values were reported imprecisely (as *p* \> .05 or *p* ≥ .05) and `r n_pvals_imprecise_sig` significant *p*-values were reported imprecisely (as *p* \< .05 or *p* ≤ .05). We excluded "*p* \< .001" and "*p* ≤ .001", which although imprecise, are reported in line with reporting guidelines. We thus conclude the manuscripts contained `r decision_error_count$n` imprecise significant *p*-values that could in principle have been reported exactly.
 
-Of `r es_summary %>% dplyr::filter(test == "F-test") %>% dplyr::pull(total)` *F*-tests identified by Metacheck, `r es_summary %>% dplyr::filter(test == "F-test") %>% dplyr::pull(reported_es)` were accompanied by a standardised effect size (`r round(es_summary %>% dplyr::filter(test == "F-test") %>% dplyr::pull(prop_reported) * 100, 1)`%). Of `r es_summary %>% dplyr::filter(test == "t-test") %>% dplyr::pull(total)` *t*-tests, `r es_summary %>% dplyr::filter(test == "t-test") %>% dplyr::pull(reported_es)` were accompanied by a standardised effect size (`r round(es_summary %>% dplyr::filter(test == "t-test") %>% dplyr::pull(prop_reported) * 100, 1)`%). These percentages are similar to the results from the manual coding in Part 1 (53.7%).
+Of `r es_summary %>% filter(test == "F-test") %>% pull(total)` *F*-tests identified by Metacheck, `r es_summary %>% filter(test == "F-test") %>% pull(reported_es)` were accompanied by a standardised effect size (`r round(es_summary %>% filter(test == "F-test") %>% pull(prop_reported) * 100, 1)`%). Of `r es_summary %>% filter(test == "t-test") %>% pull(total)` *t*-tests, `r es_summary %>% filter(test == "t-test") %>% pull(reported_es)` were accompanied by a standardised effect size (`r round(es_summary %>% filter(test == "t-test") %>% pull(prop_reported) * 100, 1)`%). These percentages are similar to the results from the manual coding in Part 1 (53.7%). Reporting an effect size did not guarantee that it could be verified: of the `r n_es_tests` *t*- and *F*-tests that reported a standardised effect size, `r n_es_uncheckable` (`r pct_of(n_es_uncheckable, n_es_tests)`) could not be checked against the reported test statistic, in most cases (*n* = `r n_es_metric_ambig`) because the metric was ambiguous or could not be reconstructed from the test statistic and its degrees of freedom (e.g., η² reported for a factorial or repeated-measures design). We do not report a verification rate for the remainder, as agreement between a reported effect size and the test statistic does not establish that the value was correct for the design actually used.
 
-As an approximate estimate of confidence-interval reporting, we searched article full-texts for the strings "95% CI" or "95% confidence interval". `r result_95ci %>% dplyr::pull(n_papers_reporting)` of `r result_95ci %>% dplyr::pull(total_papers)` papers (`r round(result_95ci %>% dplyr::pull(proportion) * 100, 1)`%) contained at least one such mention. This is a coarse instrument which may inflate proportions by mentions in the methods but not results, and should be interpreted alongside the manual-coding estimate of effect-size CI reporting (7.7%).
+As an approximate estimate of confidence-interval reporting, we searched article full-texts for the strings "95% CI" or "95% confidence interval". `r result_95ci %>% pull(n_papers_reporting)` of `r result_95ci %>% pull(total_papers)` papers (`r round(result_95ci %>% pull(proportion) * 100, 1)`%) contained at least one such mention. This is a coarse instrument which may inflate proportions by mentions in the methods but not results, and should be interpreted alongside the manual-coding estimate of effect-size CI reporting (7.7%).
 
 ```{r}
 #| output: FALSE
 #| eval: TRUE
 ### `stat_check` module and analysis of the results, broken down into t-tests and F-tests
 
-mc_statcheck_p_values <- module_run(articles_files, "stat_check")
-
-mc_tbl <- mc_statcheck_p_values$table
+# test_type holds "F" and "t". Without an explicit column type readr reads
+# these as logical ("F" = FALSE), which silently empties the F/t split below.
+mc_tbl <- read_csv(
+  here("files", "cached_stat_check.csv"),
+  col_types = cols(
+    paper_id       = col_character(),
+    test_type      = col_character(),
+    reported_p     = col_double(),
+    computed_p     = col_double(),
+    error          = col_logical(),
+    decision_error = col_logical()
+  )
+)
 
 # define "mc_completed" as rows where a computed p-value was produced
 mc_completed <- mc_tbl %>%
-  dplyr::filter(!is.na(computed_p))
+  filter(!is.na(computed_p))
 
 # Standardise test type labels using an explicit vocabulary, not a
 # permissive regex. The previous "^t" / "^f" pattern (case-insensitive)
@@ -649,8 +826,8 @@ mc_completed <- mc_tbl %>%
 # and could mis-classify rows. Inspect unique(mc_completed$test_raw) before
 # trusting the output of this normalisation.
 .norm_test_label <- function(x) {
-  s <- tolower(stringr::str_trim(as.character(x)))
-  dplyr::case_when(
+  s <- tolower(str_trim(as.character(x)))
+  case_when(
     s %in% c("t", "t-test", "ttest", "t test", "student's t", "students t",
              "welch's t", "paired t", "independent t") ~ "t-test",
     s %in% c("f", "f-test", "ftest", "f test", "anova", "ancova",
@@ -661,7 +838,7 @@ mc_completed <- mc_tbl %>%
 }
 
 mc_completed <- mc_completed %>%
-  dplyr::mutate(
+  mutate(
     test_raw  = as.character(test_type),
     test_type = .norm_test_label(test_raw)
   )
@@ -670,12 +847,12 @@ mc_completed <- mc_completed %>%
 mc_total_completed <- nrow(mc_completed)
 
 mc_summary_by_test <- mc_completed %>%
-  dplyr::count(test_type, name = "n_tests") %>%
-  dplyr::mutate(prop = n_tests / mc_total_completed)
+  count(test_type, name = "n_tests") %>%
+  mutate(prop = n_tests / mc_total_completed)
 
-mc_summary_table <- dplyr::bind_rows(
+mc_summary_table <- bind_rows(
   mc_summary_by_test,
-  tibble::tibble(test_type = "Total_completed", n_tests = mc_total_completed, prop = 1)
+  tibble(test_type = "Total_completed", n_tests = mc_total_completed, prop = 1)
 )
 
 mc_summary_table
@@ -710,21 +887,21 @@ mc_error1_n <- mc_error_1dec %>% filter(new_error == TRUE) %>% pull(n)
 mc_dec_error_n <- mc_dec_error %>% filter(decision_error == TRUE) %>% pull(n)
 ```
 
-The Statcheck module completed `r mc_summary_table %>% dplyr::filter(test_type == "Total_completed") %>% dplyr::pull(n_tests)` statistical tests. Of these, `r mc_summary_table %>% dplyr::filter(test_type == "F-test") %>% dplyr::pull(n_tests)` were *F*-tests and `r mc_summary_table %>% dplyr::filter(test_type == "t-test") %>% dplyr::pull(n_tests)` were *t*-tests. A total of `r mc_error %>% dplyr::filter(error == TRUE) %>% dplyr::pull(n)` reporting errors were identified, corresponding to `r scales::percent((mc_error %>% dplyr::filter(error == TRUE) %>% dplyr::pull(n)) / (mc_summary_table %>% dplyr::filter(test_type == "Total_completed") %>% dplyr::pull(n_tests)), accuracy = 0.1)` of all tests. When a more conservative criterion was applied—counting only errors greater than one decimal place—the number of errors decreased to `r mc_error_1dec %>% dplyr::filter(new_error == TRUE) %>% dplyr::pull(n)` (`r scales::percent((mc_error_1dec %>% dplyr::filter(new_error == TRUE) %>% dplyr::pull(n)) / (mc_summary_table %>% dplyr::filter(test_type == "Total_completed") %>% dplyr::pull(n_tests)), accuracy = 0.1)`).
+The Statcheck module completed `r mc_summary_table %>% filter(test_type == "Total_completed") %>% pull(n_tests)` statistical tests. Of these, `r mc_summary_table %>% filter(test_type == "F-test") %>% pull(n_tests)` were *F*-tests and `r mc_summary_table %>% filter(test_type == "t-test") %>% pull(n_tests)` were *t*-tests. A total of `r mc_error %>% filter(error == TRUE) %>% pull(n)` reporting errors were identified, corresponding to `r percent((mc_error %>% filter(error == TRUE) %>% pull(n)) / (mc_summary_table %>% filter(test_type == "Total_completed") %>% pull(n_tests)), accuracy = 0.1)` of all tests. When a more conservative criterion was applied—counting only errors greater than one decimal place—the number of errors decreased to `r mc_error_1dec %>% filter(new_error == TRUE) %>% pull(n)` (`r percent((mc_error_1dec %>% filter(new_error == TRUE) %>% pull(n)) / (mc_summary_table %>% filter(test_type == "Total_completed") %>% pull(n_tests)), accuracy = 0.1)`).
 
-In total, `r mc_dec_error %>% dplyr::filter(decision_error == TRUE) %>% dplyr::pull(n)` decision errors were observed, representing `r scales::percent((mc_dec_error %>% dplyr::filter(decision_error == TRUE) %>% dplyr::pull(n)) / (mc_summary_table %>% dplyr::filter(test_type == "Total_completed") %>% dplyr::pull(n_tests)), accuracy = 0.1)` of all tests.
+In total, `r mc_dec_error %>% filter(decision_error == TRUE) %>% pull(n)` decision errors were observed, representing `r percent((mc_dec_error %>% filter(decision_error == TRUE) %>% pull(n)) / (mc_summary_table %>% filter(test_type == "Total_completed") %>% pull(n_tests)), accuracy = 0.1)` of all tests.
 
 # Discussion
 
 The implications of these findings are important for our discipline, a field heavily reliant on statistical inference via null hypothesis significance tests (NHST). First, accurate reporting of inferential statistics is foundational to the interpretation and reuse of findings. Inadequate reporting of test statistics, degrees of freedom, and confidence intervals undermines reproducibility and limits the scope for verification [@nuijten_prevalence_2016; @errington_reproducibility_2017]. Moreover, without standardized effect sizes and intervals of uncertainty, it is nearly impossible to assess the magnitude and precision of effects, impeding efforts to evaluate practical relevance or aggregate data across studies. Critically, the substantial proportion of missing or incomplete statistical information observed here represents a direct threat to the cumulative nature of the science, as it restricts the inclusion of studies in meta-analyses and limits the ability to build reliable, generalizable knowledge.There appears to be a deficit in the awareness of researchers, peer reviewers and journals as to why the reporting of this information is so important for cumulative science.
 
-Second, the near absence of data sharing signals a critical absence of transparency in the research method of our field. This has been observed previously, when @twomey_nature_2021 previously found that just 0.67% of SES studies shared data, and our previous work identified a 0% data sharing rate [@mesquida2023] - figures essentially replicated in this sample. Further, @borg_sharing_2020 found that only 4.3% shared their data and/or code in a comparable audit. These findings are similar to some other fields, such as biomedical sciences [@germaine2024], but much lower than in other fields, such as economics, and psychology, where the prevalence of open-data and other reproducibility-related practices is markedly higher [@ferguson2023; @hardwicke_psych_2022]. Field-specific commentaries have for some time called for SES to adopt more transparent research practices [@caldwell_moving_2020]. Whilst there are valid cases in which data cannot be shared, such as personal medical data, authors still have options to protect privacy without sacrificing transparency. One approach is the use of synthetic data, which allows researchers to simulate datasets in ways that control the degrees of resemblance to the original data while limiting the disclosure of informative information (data protection - @borg_sharing_2020 and synthetic data - @giuffre2023). However, we do believe that this sensitive data represents the minority of SES research and instead the lack of data sharing represents a systemic lack of transparency and openness to falsification in our field. Finally, the lack of data sharing raises concerns about selective reporting, and p-hacking [@wicherts2011; @open_science_collaboration_estimating_2015] which should be investigated further given the presence of publication bias in our published literature [@mesquida2023; @borg_bias_2023]. In order for the sharing of code and data to become a normal part of the scientific process, there needs to be a culture shift toward self-correction and a normalization of scientific errors [@frank_error_2026]. There is an important role for journals here to raise the bar in transparency, and data and code sharing - when ethically possible - should become the default in all high-quality journals in our field.
+Second, the near absence of data sharing signals a critical absence of transparency in the research method of our field. This has been observed previously, when @twomey_nature_2021 previously found that just 0.67% of SES studies shared data, and our previous work identified a 0% data sharing rate [@mesquida2023] - figures essentially replicated in this sample. Further, @borg_sharing_2020 found that only 4.3% shared their data and/or code in a comparable audit. These findings are similar to some other fields, such as biomedical sciences [@germaine2024], but much lower than in other fields, such as economics, and psychology, where the prevalence of open-data and other reproducibility-related practices is markedly higher [@ferguson2023; @hardwicke_psych_2022]. Field-specific commentaries have for some time called for SES to adopt more transparent research practices [@caldwell_moving_2020]. Whilst there are valid cases in which data cannot be shared, such as personal medical data, authors still have options to protect privacy without sacrificing transparency. One approach is the use of synthetic data, which allows researchers to simulate datasets in ways that control the degrees of resemblance to the original data while limiting the disclosure of informative information (data protection - @borg_sharing_2020 and synthetic data - @giuffre2023). However, we do believe that this sensitive data represents the minority of SES research and instead the lack of data sharing represents a systemic lack of transparency and openness to falsification in our field. Finally, the lack of data sharing raises concerns about selective reporting, and p-hacking [@wicherts2011; @wicherts_degrees_2016] which should be investigated further given the presence of publication bias in our published literature [@mesquida2023; @borg_bias_2023]. In order for the sharing of code and data to become a normal part of the scientific process, there needs to be a culture shift toward self-correction and a normalization of scientific errors [@frank_error_2026]. There is an important role for journals here to raise the bar in transparency, and data and code sharing - when ethically possible - should become the default in all high-quality journals in our field.
 
 Despite a successful reproducibility check of the 132 studies for which it was possible, the poor reporting quality of the original sample must be acknowledged. Just over one-third of studies provided sufficient information for *p*-value reproducibility checks, and 35 of those still required us to manually determine the degrees of freedom. This is also a risk of bias - we cannot evaluate if the studies that do report all critical test statistics are more reproducible than those that do not report these metrics, although @wicherts2011 suggested the lack of data sharing was associated with weaker evidence, as well as a higher proportion of statistical reporting errors, in 1148 results across 49 research papers in psychology.
 
-The automated analysis via Metacheck, which examined all *F*- and *t*-tests across the `r length(articles_files)` convertible articles, corroborated and extended the findings from the manually coded subset. A substantial proportion of significant *p*-values were reported imprecisely (e.g., as *p* \< .05 rather than an exact value), a practice that prevents readers from evaluating the precise strength of evidence and is inconsistent with current reporting standards [APA JARS; @appelbaum_journal_2018] and with calls to move beyond a binary *p* \< .05 framing [@wasserstein_schirm_lazar_2019; @amrhein_retire_2019]. Standardised effect sizes were reported for only a minority of *F*- and *t*-tests identified, a finding consistent with the manual coding results and reinforcing the conclusion that effect size reporting remains uncommon rather than routine in applied SES. The broader statcheck sweep revealed a similar overall error rate to that found in the manual subsample, suggesting that the conclusions of the pre-registered analysis are not an artefact of focusing on a single result per study. Together, these findings indicate that underreporting is a pervasive feature of statistical results across studies in this sample, not confined to any particular result type or study design.
+The automated analysis via Metacheck, which examined all *F*- and *t*-tests across the `r n_papers` convertible articles, extended the findings from the manually coded subset. A substantial proportion of significant *p*-values were reported imprecisely (e.g., as *p* \< .05 rather than an exact value), a practice that prevents readers from evaluating the precise strength of evidence and is inconsistent with current reporting standards [APA JARS; @appelbaum_journal_2018] and with calls to move beyond a binary *p* \< .05 framing [@wasserstein_schirm_lazar_2019; @amrhein_retire_2019]. Standardised effect sizes accompanied `r round(es_summary %>% filter(test == "F-test") %>% pull(prop_reported) * 100, 1)`% of the *F*-tests and `r round(es_summary %>% filter(test == "t-test") %>% pull(prop_reported) * 100, 1)`% of the *t*-tests identified, closely matching the `r pct_of(n_es_any)` of studies that reported an effect size in the manual coding. Effect size reporting is therefore no longer the exception in applied SES; the persistent gap is the uncertainty around those estimates, with only `r pct_of(n_ci_es)` of studies reporting a confidence interval for the effect of interest. Reporting an effect size is also necessary but not sufficient: for `r pct_of(n_es_uncheckable, n_es_tests)` of the effect sizes we identified, the metric was too ambiguous to be checked against the test statistic, or to be pooled reliably in a meta-analysis. The broader statcheck sweep flagged `r mc_error_n` of `r mc_total_n` recomputed tests as inconsistent (`r pct_of(mc_error_n, mc_total_n)`), of which `r mc_dec_error_n` (`r pct_of(mc_dec_error_n, mc_total_n)`) changed the statistical decision. These rates are not directly comparable with the manually coded subset, in which `r n_f_nonexact` of the `r n_f_statcheck` *F*-tests (`r pct_of(n_f_nonexact, n_f_statcheck)`) departed in some way from the value we recomputed, because most of those departures reflect *p*-values reported imprecisely rather than arithmetic error — a category the automated sweep treats differently. Both analyses nonetheless point the same way: inconsistencies are common, outright decision errors are rare, suggesting that the conclusions of the pre-registered analysis are not an artefact of focusing on a single result per study. Together, these findings indicate that underreporting is a pervasive feature of statistical results across studies in this sample, not confined to any particular result type or study design.
 
-A limitation of this study was that whilst the coding protocol was carefully piloted and interrater reliability was addressed, some degree of subjectivity in identifying the primary statistical test of interest is unavoidable, especially given inconsistent or vague hypothesis statements. For the additional analysis, XML conversion via GROBID is not perfect (equations, special characters, and non-standard formatting may cause extraction errors, which could inflate or deflate apparent error rates and in particular may have affected the detection of confidence interval reporting). Moreover, the statcheck module relies on the presence of sufficient information to recompute p-values, and any errors in text extraction or formatting, together with the known limitations of automated *p*-checking when one-tailed tests, adjusted *p*-values, or sphericity corrections are involved [@schmidt_statcheck_2017], could lead to misclassification of errors. Finally, the search for confidence interval reporting based on specific phrases is a blunt instrument that may miss instances where confidence intervals are reported without using these exact terms, or where they are reported in tables rather than text.
+A limitation of this study was that whilst the coding protocol was carefully piloted and interrater reliability was addressed, some degree of subjectivity in identifying the primary statistical test of interest is unavoidable, especially given inconsistent or vague hypothesis statements. For the additional analysis, XML conversion via GROBID is not perfect (equations, special characters, and non-standard formatting may cause extraction errors, which could inflate or deflate apparent error rates and in particular may have affected the detection of confidence interval reporting). Moreover, the statcheck module relies on the presence of sufficient information to recompute p-values, and any errors in text extraction or formatting, together with the debated limitations of automated *p*-checking when one-tailed tests, adjusted *p*-values, or sphericity corrections are involved [@schmidt_statcheck_2017; @nuijten_validity_2017], could lead to misclassification of errors. Finally, the search for confidence interval reporting based on specific phrases is a blunt instrument that may miss instances where confidence intervals are reported without using these exact terms, or where they are reported in tables rather than text.
 
 In order to improve our research reporting in the future, we suggest the following:
 

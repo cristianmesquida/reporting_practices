@@ -5,10 +5,7 @@
 
 # Load packages
 library(readxl)
-library(DescTools)
-library(dplyr)  
 library(irr)
-library(lpSolve)
 
 # Name variables assessed for inter-coder agreement
 variable_names <- c("power_analysis", "specified_dv_power", "power_sample", 
